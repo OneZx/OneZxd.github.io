@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cfb4f9;
+  background: #d9ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1734,6 +1734,8 @@ pre .javascript .function {
 }
 .theme-next #ds-thread #ds-reset .ds-sync {
   top: 5px;
+/*添加这段代码解决bug-2016-12-30*/
+  display: none;
 }
 .theme-next #ds-thread #ds-reset .ds-post-button {
   top: 4px;
