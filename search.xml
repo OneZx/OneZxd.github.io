@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[hexo主题模块配置]]></title>
+      <url>%2F2016%2F12%2F30%2Fhexo%E4%B8%BB%E9%A2%98%E6%A8%A1%E5%9D%97%E9%85%8D%E7%BD%AE%2F</url>
+      <content type="text"><![CDATA[正在测试标签页和分类页不知道是不是在front-matter区域添加categories和tags就可以了1234567title:hexo主题配置测试categories:- hexo targs testtags:- test- Games 附上front-matter配置图 试试看,万一成功了呢 hiahiahia]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[书签]]></title>
       <url>%2F2016%2F12%2F29%2F%E4%B9%A6%E7%AD%BE%2F</url>
       <content type="text"><![CDATA[一些觉得不错的文章 Markdown:让书写更美好 hexo官方中文文档 hexo搭建github博客 hexo博客配置-主题-写作 Sublime插件:Markdown篇 简化markdown写作中的贴图流程 sublime-Text3 OmniMarkupPreviewer 404 关于sublime插件bug sublime的OmniMarkupPreviewer插件出现这个问题解决办法,在以下路径中添加图中代码 在下面复制代码,上面这是图片,后来才意识到用代码方便大家复制12345&#123; "renderer_options-MarkdownRenderer": &#123; "extensions": ["tables", "fenced_code", "codehilite"] &#125;&#125; 注意 markdown引用图片路径时 在blog的source文件夹中新建一个images文件夹 然后把图片放在images文件夹里![text](/images/img.png) 这样方便管理图片 发现bug: {上诉地址只在hexo主页面能显示} 文章页面无法显示图片 由于hexo的主页路由和文章页面路由配置不同,使用相对地址后图片在主页渲染出来,在文章页无法显示,故: 图片得用网上绝对地址,先上传图片到github 使用绝对地址定义![text](http://doyouz.com/images/img.png)]]></content>
