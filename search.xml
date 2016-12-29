@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[书签]]></title>
+      <url>%2F2016%2F12%2F29%2F%E4%B9%A6%E7%AD%BE%2F</url>
+      <content type="text"><![CDATA[一些觉得不错的文章 Markdown:让书写更美好 hexo官方中文文档 hexo搭建github博客 hexo博客配置-主题-写作 Sublime插件:Markdown篇 简化markdown写作中的贴图流程 sublime-Text3 OmniMarkupPreviewer 404 关于sublime插件bug sublime的OmniMarkupPreviewer插件出现这个问题解决办法,在以下路径中添加图中代码 在下面复制代码,上面这是图片,后来才意识到用代码方便大家复制12345&#123; "renderer_options-MarkdownRenderer": &#123; "extensions": ["tables", "fenced_code", "codehilite"] &#125;&#125; 注意 markdown引用图片路径时 在blog的source文件夹中新建一个images文件夹 然后把图片放在images文件夹里![text](/images/img.png) 这样方便管理图片 发现bug: {上诉地址只在hexo主页面能显示} 文章页面无法显示图片 由于hexo的主页路由和文章页面路由配置不同,使用相对地址后图片在主页渲染出来,在文章页无法显示,故: 图片得用网上绝对地址,先上传图片到github 使用绝对地址定义![text](http://doyouz.com/images/img.png)]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[测试评论功能]]></title>
+      <url>%2F2016%2F12%2F28%2F%E6%B5%8B%E8%AF%95%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%2F</url>
+      <content type="text"><![CDATA[测试一下评论插件是否配置好 哈哈哈哈哈啊哈哈啊哈 我猜可以 不可以把你吃了 so sad 表示并没有配置好 好吧,重来. step one next 发现问题 : config文件选错了,应该是用根目录的,soga 附上配置链接Hexo使用多说教程 出现评论栏了oh yeah 最近有点boring… 这一行是测试用]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>%2F2016%2F12%2F28%2Fhello-world%2F</url>
+      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    </entry>
+
+    
+  
+  
+</search>
