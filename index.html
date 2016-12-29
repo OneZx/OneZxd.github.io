@@ -266,6 +266,155 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/30/关于next主题sidebar默认显示目录/" itemprop="url">
+                  关于next主题sidebar默认显示目录
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-12-30T02:21:20+08:00" content="2016-12-30">
+              2016-12-30
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/30/关于next主题sidebar默认显示目录/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/30/关于next主题sidebar默认显示目录/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/30/关于next主题sidebar默认显示目录/" class="leancloud_visitors" data-flag-title="关于next主题sidebar默认显示目录">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>发现在next主题下书写文章,如果加上了<code>### 文章标题</code>,next会自动生成content目录,但是每次点开一篇文章会出现一件烦人的事</p>
+<blockquote>
+<p>看这里</p>
+</blockquote>
+<hr>
+<p>就是当我们往下滑动鼠标时(pc端),侧边栏sidebar会自动显示出来</p>
+<blockquote>
+<p>怎么解决呢</p>
+</blockquote>
+<p>看官方文档sidebar配置</p>
+<p>解决方案是:</p>
+<ul>
+<li>先在<code>主题配置文件</code>中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作</li>
+</ul>
+<hr>
+<pre><code>1. 找到`themes\next\source\js\src\motions.js`文件
+1. 在sublime中打开文件后ctrl+f输入`CONFIG.sidebar` 
+1. 找到`CONFIG.sidebar.display === &apos;always&apos;` 将always改为hide
+</code></pre><hr>
+<p>做完上述步骤后,在git bash或其他终端中输入<code>hexo s</code>测试下吧,应该no problem了</p>
+<p>写得不太详细,有空再补上一些文档链接 睡了 晚安</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/30/hexo主题模块配置/" itemprop="url">
                   hexo主题模块配置
                 </a>
@@ -398,7 +547,7 @@
               
                 
                 <a class="post-title-link" href="/2016/12/29/书签/" itemprop="url">
-                  书签
+                  hexo的一些书签
                 </a>
               
             
@@ -417,6 +566,25 @@
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -433,7 +601,7 @@
 
           
           
-             <span id="/2016/12/29/书签/" class="leancloud_visitors" data-flag-title="书签">
+             <span id="/2016/12/29/书签/" class="leancloud_visitors" data-flag-title="hexo的一些书签">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -804,7 +972,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -821,7 +989,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
