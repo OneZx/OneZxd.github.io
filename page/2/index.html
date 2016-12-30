@@ -89,7 +89,7 @@
 <meta name="description" content="念念不忘 必有回响">
 <meta property="og:type" content="website">
 <meta property="og:title" content="doyou z.">
-<meta property="og:url" content="http://doyouz.com/tags/share/index.html">
+<meta property="og:url" content="http://doyouz.com/page/2/index.html">
 <meta property="og:site_name" content="doyou z.">
 <meta property="og:description" content="念念不忘 必有回响">
 <meta name="twitter:card" content="summary">
@@ -112,7 +112,7 @@
   };
 </script>
 
-  <title> Tag: share | doyou z. </title>
+  <title> doyou z. </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -133,7 +133,9 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -253,47 +255,281 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        share
-        <small>Tag</small>
-      </h2>
-    </div>
-
+  <section id="posts" class="posts-expand">
     
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
 
-      <h1 class="post-title">
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2016/12/29/hexo的一些书签/" itemprop="url">
-              
-                <span itemprop="name">hexo的一些书签</span>
-              
-            </a>
         
-      </h1>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/28/测试评论功能/" itemprop="url">
+                  测试评论功能
+                </a>
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-12-29T00:05:05+08:00"
-              content="2016-12-29" >
-          12-29
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-12-28T23:27:39+08:00" content="2016-12-28">
+              2016-12-28
+            </time>
+          </span>
 
-    </header>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/28/测试评论功能/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/28/测试评论功能/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/28/测试评论功能/" class="leancloud_visitors" data-flag-title="测试评论功能">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="测试一下评论插件是否配置好"><a href="#测试一下评论插件是否配置好" class="headerlink" title="测试一下评论插件是否配置好"></a>测试一下评论插件是否配置好</h3><ul>
+<li>按着说明文档配置了一下,见证奇迹的时候到了</li>
+<li>我猜可以 </li>
+<li>不可以把你吃了~~</li>
+</ul>
+<hr>
+<ol>
+<li>so sad 表示并没有配置好 好吧,重来. step one next</li>
+<li>发现问题 : config文件选错了,应该是用根目录的,soga<ul>
+<li>附上配置链接<a href="http://dev.duoshuo.com/threads/541d3b2b40b5abcd2e4df0e9" target="_blank" rel="external">Hexo使用多说教程</a></li>
+</ul>
+</li>
+</ol>
+<hr>
+<ul>
+<li>出现评论栏了oh yeah</li>
+</ul>
+<h3 id="最近有点boring…"><a href="#最近有点boring…" class="headerlink" title="最近有点boring…"></a>最近有点boring…</h3><blockquote>
+<p>话说怎么更改评论框的样式</p>
+</blockquote>
+<ul>
+<li>待我回头找找文档资料</li>
+</ul>
+<hr>
+<h3 id="多说评论框样式的修改"><a href="#多说评论框样式的修改" class="headerlink" title="多说评论框样式的修改"></a>多说评论框样式的修改</h3><p>next主题的多说样式文件路径在</p>
+<hr>
+<p><code>your-blog\themes\next\source\css\_common\components\third-party\duoshuo.styl</code></p>
+<hr>
+<ul>
+<li><p>隐藏底部多说版权</p>
+</li>
+<li><p>添加代码<code>#ds-thread #ds-reset .ds-powered-by{display:none;}</code></p>
+</li>
+<li><p>将评论框底部的分享到微博QQ空间什么的隐藏起来</p>
+</li>
+<li><p>代码<code>#ds-thread #ds-reset .ds-sync {display:none;}</code></p>
+</li>
+</ul>
+<blockquote class="blockquote-center"><h2>You may be out of my sight, but never out of my mind.</h2> </blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
     
-  </div>
+      
 
   
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/28/hello-world/" itemprop="url">
+                  Hello World
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-12-28T18:31:01+08:00" content="2016-12-28">
+              2016-12-28
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/28/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/28/hello-world/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/28/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
 
 
           </div>

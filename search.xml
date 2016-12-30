@@ -12,7 +12,7 @@
     <entry>
       <title><![CDATA[hexo主题模块配置]]></title>
       <url>%2F2016%2F12%2F30%2Fhexo%E4%B8%BB%E9%A2%98%E6%A8%A1%E5%9D%97%E9%85%8D%E7%BD%AE%2F</url>
-      <content type="text"><![CDATA[正在测试标签页和分类页不知道是不是在front-matter区域添加categories和tags就可以了1234567title:hexo主题模块配置categories:- hexo targs testtags:- test- Games 附上front-matter配置图 试试看,万一成功了呢 hiahiahia I’ll think of you every step of the way.]]></content>
+      <content type="text"><![CDATA[正在测试标签页和分类页不知道是不是在front-matter区域添加categories和tags就可以了 1234567title:hexo主题模块配置categories:- hexo targs testtags:- test- Games 附上front-matter配置图 试试看,万一成功了呢 hiahiahia I’ll think of you every step of the way.]]></content>
     </entry>
 
     
