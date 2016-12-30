@@ -5,28 +5,28 @@
     <entry>
       <title><![CDATA[关于next主题sidebar默认显示目录]]></title>
       <url>%2F2016%2F12%2F30%2F%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98sidebar%E9%BB%98%E8%AE%A4%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95%2F</url>
-      <content type="text"><![CDATA[发现在next主题下书写文章,如果加上了### 文章标题,next会自动生成content目录,但是每次点开一篇文章会出现一件烦人的事 看这里 就是当我们往下滑动鼠标时(pc端),侧边栏sidebar会自动显示出来 怎么解决呢 看官方文档sidebar配置 解决方案是: 先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作 1. 找到`themes\next\source\js\src\motions.js`文件 2. 在sublime中打开文件后ctrl+f输入`CONFIG.sidebar` 3. 找到`CONFIG.sidebar.display === &apos;always&apos;` 将always改为hide 做完上述步骤后,在git bash或其他终端中输入hexo s测试下吧,应该no problem了 最后解决 发现这样只是在文章页可以自动显示sidebar,看了下motion源码,首页进入后还是会在duration 200ms延迟显示sidebar 还是回到主题的配置文件,display: hide 这条语句 写得不太详细,有空再补上一些文档链接 睡了 晚安 去除所有动画:在主题配置文件中设定use motion: false即可解决上诉问题 折腾了这么久,原来so easy… 但是这种方式又会清除所有动画效果..]]></content>
+      <content type="text"><![CDATA[发现在next主题下书写文章,如果加上了### 文章标题,next会自动生成content目录,但是每次点开一篇文章会出现一件烦人的事 看这里 就是当我们往下滑动鼠标时(pc端),侧边栏sidebar会自动显示出来 怎么解决呢 看官方文档sidebar配置 解决方案是:- 先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作 1. 找到themes\next\source\js\src\motions.js文件2. 在sublime中打开文件后ctrl+f输入CONFIG.sidebar3. 找到CONFIG.sidebar.display === &#39;always&#39; 将always改为hide 做完上述步骤后,在git bash或其他终端中输入hexo s测试下吧,应该no problem了 最后解决 发现这样只是在文章页可以自动显示sidebar,看了下motion.js源码,首页进入后还是会在duration 200ms延迟显示sidebar 还是回到主题的配置文件,添加 display: hide 这条语句 写得不太详细,有空再补上一些文档链接 睡了 晚安 终于改好这个sibebar的显示了 ~perfect 去除所有动画:在主题配置文件中设定use motion: false即可解决上诉问题 折腾了这么久,原来so easy… 但是这种方式又会清除所有动画效果.. I love three things in this world, the sun ,the moon and you. The sun for the day, the moon for the night, and you forever.]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[hexo主题模块配置]]></title>
       <url>%2F2016%2F12%2F30%2Fhexo%E4%B8%BB%E9%A2%98%E6%A8%A1%E5%9D%97%E9%85%8D%E7%BD%AE%2F</url>
-      <content type="text"><![CDATA[正在测试标签页和分类页不知道是不是在front-matter区域添加categories和tags就可以了1234567title:hexo主题模块配置categories:- hexo targs testtags:- test- Games 附上front-matter配置图 试试看,万一成功了呢 hiahiahia]]></content>
+      <content type="text"><![CDATA[正在测试标签页和分类页不知道是不是在front-matter区域添加categories和tags就可以了1234567title:hexo主题模块配置categories:- hexo targs testtags:- test- Games 附上front-matter配置图 试试看,万一成功了呢 hiahiahia I’ll think of you every step of the way.]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[hexo的一些书签]]></title>
-      <url>%2F2016%2F12%2F29%2F%E4%B9%A6%E7%AD%BE%2F</url>
-      <content type="text"><![CDATA[一些觉得不错的文章 Markdown:让书写更美好 hexo官方中文文档 hexo搭建github博客 hexo博客配置-主题-写作 Sublime插件:Markdown篇 简化markdown写作中的贴图流程 sublime-Text3 OmniMarkupPreviewer 404 关于sublime插件bug sublime的OmniMarkupPreviewer插件出现这个问题解决办法,在以下路径中添加图中代码 在下面复制代码,上面这是图片,后来才意识到用代码方便大家复制12345&#123; "renderer_options-MarkdownRenderer": &#123; "extensions": ["tables", "fenced_code", "codehilite"] &#125;&#125; 注意 markdown引用图片路径时 在blog的source文件夹中新建一个images文件夹 然后把图片放在images文件夹里![text](/images/img.png) 这样方便管理图片 发现bug: {上诉地址只在hexo主页面能显示} 文章页面无法显示图片 由于hexo的主页路由和文章页面路由配置不同,使用相对地址后图片在主页渲染出来,在文章页无法显示,故: 图片得用网上绝对地址,先上传图片到github 使用绝对地址定义![text](http://doyouz.com/images/img.png)]]></content>
+      <url>%2F2016%2F12%2F29%2Fhexo%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B9%A6%E7%AD%BE%2F</url>
+      <content type="text"><![CDATA[一些觉得不错的文章 Markdown:让书写更美好 hexo官方中文文档 hexo搭建github博客 hexo博客配置-主题-写作 Sublime插件:Markdown篇 简化markdown写作中的贴图流程 sublime-Text3 OmniMarkupPreviewer 404 关于sublime插件bug sublime的OmniMarkupPreviewer插件出现这个问题解决办法,在以下路径中添加图中代码 在下面复制代码,上面这是图片,后来才意识到用代码方便大家复制12345&#123; "renderer_options-MarkdownRenderer": &#123; "extensions": ["tables", "fenced_code", "codehilite"] &#125;&#125; 注意 markdown引用图片路径时 在blog的source文件夹中新建一个images文件夹 然后把图片放在images文件夹里![text](/images/img.png) 这样方便管理图片 发现bug: {上诉地址只在hexo主页面能显示} 文章页面无法显示图片 由于hexo的主页路由和文章页面路由配置不同,使用相对地址后图片在主页渲染出来,在文章页无法显示,故: 图片得用网上绝对地址,先上传图片到github 使用绝对地址定义![text](http://doyouz.com/images/img.png) You got a dream, you gotta protect it. People can’t do something themselves,they wanna tell you you can’t do it.If you want something, go get it. Period.]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[测试评论功能]]></title>
       <url>%2F2016%2F12%2F28%2F%E6%B5%8B%E8%AF%95%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%2F</url>
-      <content type="text"><![CDATA[测试一下评论插件是否配置好 按着说明文档配置了一下,见证奇迹的时候到了 我猜可以 不可以把你吃了~~ so sad 表示并没有配置好 好吧,重来. step one next 发现问题 : config文件选错了,应该是用根目录的,soga 附上配置链接Hexo使用多说教程 出现评论栏了oh yeah 最近有点boring… 话说怎么更改评论框的样式 待我回头找找文档资料 多说评论框样式的修改next主题的多说样式文件路径在 your-blog\themes\next\source\css\_common\components\third-party\duoshuo.styl 隐藏底部多说版权 添加代码#ds-thread #ds-reset .ds-powered-by{display:none;} 将评论框底部的分享到微博QQ空间什么的隐藏起来 代码#ds-thread #ds-reset .ds-sync {display:none;}]]></content>
+      <content type="text"><![CDATA[测试一下评论插件是否配置好 按着说明文档配置了一下,见证奇迹的时候到了 我猜可以 不可以把你吃了~~ so sad 表示并没有配置好 好吧,重来. step one next 发现问题 : config文件选错了,应该是用根目录的,soga 附上配置链接Hexo使用多说教程 出现评论栏了oh yeah 最近有点boring… 话说怎么更改评论框的样式 待我回头找找文档资料 多说评论框样式的修改next主题的多说样式文件路径在 your-blog\themes\next\source\css\_common\components\third-party\duoshuo.styl 隐藏底部多说版权 添加代码#ds-thread #ds-reset .ds-powered-by{display:none;} 将评论框底部的分享到微博QQ空间什么的隐藏起来 代码#ds-thread #ds-reset .ds-sync {display:none;} You may be out of my sight, but never out of my mind.]]></content>
     </entry>
 
     

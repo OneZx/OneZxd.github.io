@@ -96,9 +96,7 @@
 怎么解决呢
 
 看官方文档sidebar配置
-解决方案是:
-
-先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作">
+解决方案是:- 先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于next主题sidebar默认显示目录">
 <meta property="og:url" content="http://doyouz.com/2016/12/30/关于next主题sidebar默认显示目录/index.html">
@@ -113,11 +111,9 @@
 怎么解决呢
 
 看官方文档sidebar配置
-解决方案是:
-
-先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作">
+解决方案是:- 先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作">
 <meta property="og:image" content="http://doyouz.com/images/sidebar配置.png">
-<meta property="og:updated_time" content="2016-12-30T09:14:40.899Z">
+<meta property="og:updated_time" content="2016-12-30T09:38:38.471Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于next主题sidebar默认显示目录">
 <meta name="twitter:description" content="发现在next主题下书写文章,如果加上了### 文章标题,next会自动生成content目录,但是每次点开一篇文章会出现一件烦人的事
@@ -130,9 +126,7 @@
 怎么解决呢
 
 看官方文档sidebar配置
-解决方案是:
-
-先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作">
+解决方案是:- 先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作">
 <meta name="twitter:image" content="http://doyouz.com/images/sidebar配置.png">
 
 
@@ -399,25 +393,23 @@
 <p>怎么解决呢</p>
 </blockquote>
 <p>看官方文档sidebar配置</p>
-<p>解决方案是:</p>
-<ul>
-<li>先在<code>主题配置文件</code>中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作</li>
-</ul>
+<p><del>解决方案是:</del><br><del>- 先在<code>主题配置文件</code>中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作</del></p>
 <hr>
-<pre><code>1. 找到`themes\next\source\js\src\motions.js`文件
-2. 在sublime中打开文件后ctrl+f输入`CONFIG.sidebar` 
-3. 找到`CONFIG.sidebar.display === &apos;always&apos;` 将always改为hide
-</code></pre><hr>
-<p>做完上述步骤后,在git bash或其他终端中输入<code>hexo s</code>测试下吧,应该no problem了</p>
+<p><del>1. 找到<code>themes\next\source\js\src\motions.js</code>文件</del><br><del>2. 在sublime中打开文件后ctrl+f输入<code>CONFIG.sidebar</code></del><br><del>3. 找到<code>CONFIG.sidebar.display === &#39;always&#39;</code> 将always改为hide</del></p>
+<hr>
+<p><del>做完上述步骤后,在git bash或其他终端中输入<code>hexo s</code>测试下吧,应该no problem了</del></p>
 <blockquote>
 <p>最后解决</p>
 </blockquote>
 <ul>
-<li>发现这样只是在文章页可以自动显示sidebar,看了下motion源码,首页进入后还是会在duration 200ms延迟显示sidebar</li>
-<li>还是回到主题的配置文件,display: hide 这条语句</li>
+<li>发现这样只是在文章页可以自动显示sidebar,看了下motion.js源码,首页进入后还是会在duration 200ms延迟显示sidebar</li>
+<li>还是回到主题的配置文件,添加 display: hide 这条语句</li>
 </ul>
 <p><img src="http://doyouz.com/images/sidebar配置.png" alt="sidebar"></p>
-<p>写得不太详细,有空再补上一些文档链接 睡了 晚安</p>
+<p><del>写得不太详细,有空再补上一些文档链接 睡了 晚安</del></p>
+<blockquote>
+<p>终于改好这个sibebar的显示了 ~perfect</p>
+</blockquote>
 <hr>
 <h3 id="去除所有动画"><a href="#去除所有动画" class="headerlink" title="去除所有动画:"></a>去除所有动画:</h3><p>在主题配置文件中设定<code>use motion: false</code>即可解决上诉问题</p>
 <ul>
@@ -425,6 +417,7 @@
 <li>但是这种方式又会清除所有动画效果..</li>
 </ul>
 <hr>
+<blockquote class="blockquote-center"><h2>I love three things in this world, the sun ,the moon and you. The sun for the day, the moon for the night, and you forever. </h2> </blockquote>
 
       
     </div>
@@ -606,7 +599,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#去除所有动画"><span class="nav-number">1.</span> <span class="nav-text">去除所有动画:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#去除所有动画"><span class="nav-number">1.</span> <span class="nav-text">去除所有动画:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number"></span> <span class="nav-text">I love three things in this world, the sun ,the moon and you. The sun for the day, the moon for the night, and you forever. </span></a></div>
             
           </div>
         </section>

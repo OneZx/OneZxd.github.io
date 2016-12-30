@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://doyouz.com/"/>
-  <updated>2016-12-30T09:14:40.899Z</updated>
+  <updated>2016-12-30T09:38:38.471Z</updated>
   <id>http://doyouz.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://doyouz.com/2016/12/30/%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98sidebar%E9%BB%98%E8%AE%A4%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95/"/>
     <id>http://doyouz.com/2016/12/30/关于next主题sidebar默认显示目录/</id>
     <published>2016-12-29T18:21:20.000Z</published>
-    <updated>2016-12-30T09:14:40.899Z</updated>
+    <updated>2016-12-30T09:38:38.471Z</updated>
     
     <content type="html"><![CDATA[<p>发现在next主题下书写文章,如果加上了<code>### 文章标题</code>,next会自动生成content目录,但是每次点开一篇文章会出现一件烦人的事</p>
 <blockquote>
@@ -32,25 +32,23 @@
 <p>怎么解决呢</p>
 </blockquote>
 <p>看官方文档sidebar配置</p>
-<p>解决方案是:</p>
-<ul>
-<li>先在<code>主题配置文件</code>中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作</li>
-</ul>
+<p><del>解决方案是:</del><br><del>- 先在<code>主题配置文件</code>中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作</del></p>
 <hr>
-<pre><code>1. 找到`themes\next\source\js\src\motions.js`文件
-2. 在sublime中打开文件后ctrl+f输入`CONFIG.sidebar` 
-3. 找到`CONFIG.sidebar.display === &apos;always&apos;` 将always改为hide
-</code></pre><hr>
-<p>做完上述步骤后,在git bash或其他终端中输入<code>hexo s</code>测试下吧,应该no problem了</p>
+<p><del>1. 找到<code>themes\next\source\js\src\motions.js</code>文件</del><br><del>2. 在sublime中打开文件后ctrl+f输入<code>CONFIG.sidebar</code></del><br><del>3. 找到<code>CONFIG.sidebar.display === &#39;always&#39;</code> 将always改为hide</del></p>
+<hr>
+<p><del>做完上述步骤后,在git bash或其他终端中输入<code>hexo s</code>测试下吧,应该no problem了</del></p>
 <blockquote>
 <p>最后解决</p>
 </blockquote>
 <ul>
-<li>发现这样只是在文章页可以自动显示sidebar,看了下motion源码,首页进入后还是会在duration 200ms延迟显示sidebar</li>
-<li>还是回到主题的配置文件,display: hide 这条语句</li>
+<li>发现这样只是在文章页可以自动显示sidebar,看了下motion.js源码,首页进入后还是会在duration 200ms延迟显示sidebar</li>
+<li>还是回到主题的配置文件,添加 display: hide 这条语句</li>
 </ul>
 <p><img src="http://doyouz.com/images/sidebar配置.png" alt="sidebar"></p>
-<p>写得不太详细,有空再补上一些文档链接 睡了 晚安</p>
+<p><del>写得不太详细,有空再补上一些文档链接 睡了 晚安</del></p>
+<blockquote>
+<p>终于改好这个sibebar的显示了 ~perfect</p>
+</blockquote>
 <hr>
 <h3 id="去除所有动画"><a href="#去除所有动画" class="headerlink" title="去除所有动画:"></a>去除所有动画:</h3><p>在主题配置文件中设定<code>use motion: false</code>即可解决上诉问题</p>
 <ul>
@@ -58,6 +56,7 @@
 <li>但是这种方式又会清除所有动画效果..</li>
 </ul>
 <hr>
+<blockquote class="blockquote-center"><h2>I love three things in this world, the sun ,the moon and you. The sun for the day, the moon for the night, and you forever. </h2> </blockquote>
 ]]></content>
     
     <summary type="html">
@@ -83,12 +82,12 @@
     <link href="http://doyouz.com/2016/12/30/hexo%E4%B8%BB%E9%A2%98%E6%A8%A1%E5%9D%97%E9%85%8D%E7%BD%AE/"/>
     <id>http://doyouz.com/2016/12/30/hexo主题模块配置/</id>
     <published>2016-12-29T17:24:27.000Z</published>
-    <updated>2016-12-29T17:43:07.461Z</updated>
+    <updated>2016-12-30T09:38:43.362Z</updated>
     
     <content type="html"><![CDATA[<h3 id="正在测试标签页和分类页"><a href="#正在测试标签页和分类页" class="headerlink" title="正在测试标签页和分类页"></a>正在测试标签页和分类页</h3><p>不知道是不是在front-matter区域添加categories和tags就可以了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">title:hexo主题模块配置</div><div class="line"></div><div class="line">categories:</div><div class="line">- hexo targs test</div><div class="line">tags:</div><div class="line">- test</div><div class="line">- Games</div></pre></td></tr></table></figure></p>
 <p>附上front-matter配置图<br><img src="http://doyouz.com/images/front-matter.png" alt="front-matter"></p>
 <p>试试看,万一成功了呢 hiahiahia</p>
-]]></content>
+<blockquote class="blockquote-center"><h2>I’ll think of you every step of the way.</h2> </blockquote>]]></content>
     
     <summary type="html">
     
@@ -105,10 +104,10 @@
   
   <entry>
     <title>hexo的一些书签</title>
-    <link href="http://doyouz.com/2016/12/29/%E4%B9%A6%E7%AD%BE/"/>
-    <id>http://doyouz.com/2016/12/29/书签/</id>
+    <link href="http://doyouz.com/2016/12/29/hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B9%A6%E7%AD%BE/"/>
+    <id>http://doyouz.com/2016/12/29/hexo的一些书签/</id>
     <published>2016-12-28T16:05:05.000Z</published>
-    <updated>2016-12-29T18:36:06.020Z</updated>
+    <updated>2016-12-30T09:40:12.883Z</updated>
     
     <content type="html"><![CDATA[<h3 id="一些觉得不错的文章"><a href="#一些觉得不错的文章" class="headerlink" title="一些觉得不错的文章"></a>一些觉得不错的文章</h3><ol>
 <li><a href="http://www.jianshu.com/p/17fdcf17bbb4" target="_blank" rel="external">Markdown:让书写更美好</a></li>
@@ -138,7 +137,7 @@
 <li>图片得用网上绝对地址,先上传图片到github</li>
 <li>使用绝对地址定义<code>![text](http://doyouz.com/images/img.png)</code></li>
 </ul>
-]]></content>
+<blockquote class="blockquote-center"><h2>You got a dream, you gotta protect it. People can’t do something themselves,they wanna tell you you can’t do it.If you want something, go get it. Period.</h2> </blockquote>]]></content>
     
     <summary type="html">
     
@@ -159,7 +158,7 @@
     <link href="http://doyouz.com/2016/12/28/%E6%B5%8B%E8%AF%95%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
     <id>http://doyouz.com/2016/12/28/测试评论功能/</id>
     <published>2016-12-28T15:27:39.000Z</published>
-    <updated>2016-12-30T07:31:27.798Z</updated>
+    <updated>2016-12-30T09:38:39.867Z</updated>
     
     <content type="html"><![CDATA[<h3 id="测试一下评论插件是否配置好"><a href="#测试一下评论插件是否配置好" class="headerlink" title="测试一下评论插件是否配置好"></a>测试一下评论插件是否配置好</h3><ul>
 <li>按着说明文档配置了一下,见证奇迹的时候到了</li>
@@ -199,6 +198,7 @@
 <li><p>代码<code>#ds-thread #ds-reset .ds-sync {display:none;}</code></p>
 </li>
 </ul>
+<blockquote class="blockquote-center"><h2>You may be out of my sight, but never out of my mind.</h2> </blockquote>
 ]]></content>
     
     <summary type="html">
