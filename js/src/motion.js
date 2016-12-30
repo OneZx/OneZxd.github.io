@@ -76,14 +76,14 @@ $(document).ready(function () {
   sidebarToggleLines.push(sidebarToggleLine1st);
   sidebarToggleLines.push(sidebarToggleLine2nd);
   sidebarToggleLines.push(sidebarToggleLine3rd);
-
+  //设置sidebar的宽度和延迟200毫秒显示
   var SIDEBAR_WIDTH = '320px';
   var SIDEBAR_DISPLAY_DURATION = 200;
 
   var sidebarToggleMotion = {
     toggleEl: $('.sidebar-toggle'),
     sidebarEl: $('.sidebar'),
-    isSidebarVisible: false,
+    isSidebarVisible: true,
     init: function () {
       this.toggleEl.on('click', this.clickHandler.bind(this));
       this.toggleEl.on('mouseenter', this.mouseEnterHandler.bind(this));
@@ -282,7 +282,7 @@ $(document).ready(function () {
 
     sidebar: function (integrator) {
       
-      if (CONFIG.sidebar.display === 'hide') {
+      if (CONFIG.sidebar.display === 'always') {
         NexT.utils.displaySidebar();
       }
       integrator.next();
