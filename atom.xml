@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>doyou z.</title>
+  <subtitle>The mountains are calling and I must go</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://doyouz.com/"/>
+  <updated>2016-12-30T08:24:45.851Z</updated>
+  <id>http://doyouz.com/</id>
+  
+  <author>
+    <name>--zxd--</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于next主题sidebar默认显示目录</title>
+    <link href="http://doyouz.com/2016/12/30/%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98sidebar%E9%BB%98%E8%AE%A4%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95/"/>
+    <id>http://doyouz.com/2016/12/30/关于next主题sidebar默认显示目录/</id>
+    <published>2016-12-29T18:21:20.000Z</published>
+    <updated>2016-12-30T08:24:45.851Z</updated>
+    
+    <content type="html"><![CDATA[<p>发现在next主题下书写文章,如果加上了<code>### 文章标题</code>,next会自动生成content目录,但是每次点开一篇文章会出现一件烦人的事</p>
+<blockquote>
+<p>看这里</p>
+</blockquote>
+<hr>
+<p>就是当我们往下滑动鼠标时(pc端),侧边栏sidebar会自动显示出来</p>
+<blockquote>
+<p>怎么解决呢</p>
+</blockquote>
+<p>看官方文档sidebar配置</p>
+<p>解决方案是:</p>
+<ul>
+<li>先在<code>主题配置文件</code>中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作</li>
+</ul>
+<hr>
+<pre><code>1. 找到`themes\next\source\js\src\motions.js`文件
+2. 在sublime中打开文件后ctrl+f输入`CONFIG.sidebar` 
+3. 找到`CONFIG.sidebar.display === &apos;always&apos;` 将always改为hide
+</code></pre><hr>
+<p>做完上述步骤后,在git bash或其他终端中输入<code>hexo s</code>测试下吧,应该no problem了</p>
+<p>写得不太详细,有空再补上一些文档链接 睡了 晚安</p>
+<hr>
+<h2 id="补上最新的方法"><a href="#补上最新的方法" class="headerlink" title="补上最新的方法:"></a>补上最新的方法:</h2><p>在主题配置文件中设定<code>use motion: false</code>即可解决上诉问题</p>
+<ul>
+<li>折腾了这么久,原来so easy…</li>
+</ul>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;发现在next主题下书写文章,如果加上了&lt;code&gt;### 文章标题&lt;/code&gt;,next会自动生成content目录,但是每次点开一篇文章会出现一件烦人的事&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;看这里&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;就是当我们往
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://doyouz.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://doyouz.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo主题模块配置</title>
+    <link href="http://doyouz.com/2016/12/30/hexo%E4%B8%BB%E9%A2%98%E6%A8%A1%E5%9D%97%E9%85%8D%E7%BD%AE/"/>
+    <id>http://doyouz.com/2016/12/30/hexo主题模块配置/</id>
+    <published>2016-12-29T17:24:27.000Z</published>
+    <updated>2016-12-29T17:43:07.461Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="正在测试标签页和分类页"><a href="#正在测试标签页和分类页" class="headerlink" title="正在测试标签页和分类页"></a>正在测试标签页和分类页</h3><p>不知道是不是在front-matter区域添加categories和tags就可以了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">title:hexo主题模块配置</div><div class="line"></div><div class="line">categories:</div><div class="line">- hexo targs test</div><div class="line">tags:</div><div class="line">- test</div><div class="line">- Games</div></pre></td></tr></table></figure></p>
+<p>附上front-matter配置图<br><img src="http://doyouz.com/images/front-matter.png" alt="front-matter"></p>
+<p>试试看,万一成功了呢 hiahiahia</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;正在测试标签页和分类页&quot;&gt;&lt;a href=&quot;#正在测试标签页和分类页&quot; class=&quot;headerlink&quot; title=&quot;正在测试标签页和分类页&quot;&gt;&lt;/a&gt;正在测试标签页和分类页&lt;/h3&gt;&lt;p&gt;不知道是不是在front-matter区域添加categories和
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://doyouz.com/categories/hexo/"/>
+    
+    
+      <category term="test" scheme="http://doyouz.com/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo的一些书签</title>
+    <link href="http://doyouz.com/2016/12/29/%E4%B9%A6%E7%AD%BE/"/>
+    <id>http://doyouz.com/2016/12/29/书签/</id>
+    <published>2016-12-28T16:05:05.000Z</published>
+    <updated>2016-12-29T18:36:06.020Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一些觉得不错的文章"><a href="#一些觉得不错的文章" class="headerlink" title="一些觉得不错的文章"></a>一些觉得不错的文章</h3><ol>
+<li><a href="http://www.jianshu.com/p/17fdcf17bbb4" target="_blank" rel="external">Markdown:让书写更美好</a></li>
+<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">hexo官方中文文档</a></li>
+<li><a href="http://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="external">hexo搭建github博客</a></li>
+<li><a href="http://www.jianshu.com/p/db7e64d86067" target="_blank" rel="external">hexo博客配置-主题-写作</a></li>
+<li><a href="http://www.jianshu.com/p/aa30cc25c91b" target="_blank" rel="external">Sublime插件:Markdown篇</a></li>
+<li><a href="http://www.jianshu.com/p/7bd4e6ed99be" target="_blank" rel="external">简化markdown写作中的贴图流程</a></li>
+</ol>
+<hr>
+<h3 id="sublime-Text3-OmniMarkupPreviewer-404"><a href="#sublime-Text3-OmniMarkupPreviewer-404" class="headerlink" title="sublime-Text3 OmniMarkupPreviewer 404"></a>sublime-Text3 OmniMarkupPreviewer 404</h3><blockquote>
+<p>关于sublime插件bug</p>
+</blockquote>
+<p>sublime的<code>OmniMarkupPreviewer</code>插件出现这个问题解决办法,在以下路径中添加图中代码<br><img src="http://doyouz.com/images/12-29-sublime.png" alt="solution"></p>
+<p>在下面复制代码,上面这是图片,后来才意识到用代码方便大家复制<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="string">"renderer_options-MarkdownRenderer"</span>: &#123;</div><div class="line">        <span class="string">"extensions"</span>: [<span class="string">"tables"</span>, <span class="string">"fenced_code"</span>, <span class="string">"codehilite"</span>]</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<hr>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><ul>
+<li>markdown引用图片路径时</li>
+<li>在blog的source文件夹中新建一个images文件夹</li>
+<li>然后把图片放在images文件夹里<code>![text](/images/img.png)</code> </li>
+<li>这样方便管理图片</li>
+<li>发现bug: <code>{上诉地址只在hexo主页面能显示} 文章页面无法显示图片</code></li>
+</ul>
+<hr>
+<ul>
+<li>由于hexo的主页路由和文章页面路由配置不同,使用相对地址后图片在主页渲染出来,在文章页无法显示,故:</li>
+<li>图片得用网上绝对地址,先上传图片到github</li>
+<li>使用绝对地址定义<code>![text](http://doyouz.com/images/img.png)</code></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一些觉得不错的文章&quot;&gt;&lt;a href=&quot;#一些觉得不错的文章&quot; class=&quot;headerlink&quot; title=&quot;一些觉得不错的文章&quot;&gt;&lt;/a&gt;一些觉得不错的文章&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/17
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://doyouz.com/categories/hexo/"/>
+    
+    
+      <category term="share" scheme="http://doyouz.com/tags/share/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试评论功能</title>
+    <link href="http://doyouz.com/2016/12/28/%E6%B5%8B%E8%AF%95%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
+    <id>http://doyouz.com/2016/12/28/测试评论功能/</id>
+    <published>2016-12-28T15:27:39.000Z</published>
+    <updated>2016-12-30T07:31:27.798Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="测试一下评论插件是否配置好"><a href="#测试一下评论插件是否配置好" class="headerlink" title="测试一下评论插件是否配置好"></a>测试一下评论插件是否配置好</h3><ul>
+<li>按着说明文档配置了一下,见证奇迹的时候到了</li>
+<li>我猜可以 </li>
+<li>不可以把你吃了~~</li>
+</ul>
+<hr>
+<ol>
+<li>so sad 表示并没有配置好 好吧,重来. step one next</li>
+<li>发现问题 : config文件选错了,应该是用根目录的,soga<ul>
+<li>附上配置链接<a href="http://dev.duoshuo.com/threads/541d3b2b40b5abcd2e4df0e9" target="_blank" rel="external">Hexo使用多说教程</a></li>
+</ul>
+</li>
+</ol>
+<hr>
+<ul>
+<li>出现评论栏了oh yeah</li>
+</ul>
+<h3 id="最近有点boring…"><a href="#最近有点boring…" class="headerlink" title="最近有点boring…"></a>最近有点boring…</h3><blockquote>
+<p>话说怎么更改评论框的样式</p>
+</blockquote>
+<ul>
+<li>待我回头找找文档资料</li>
+</ul>
+<hr>
+<h3 id="多说评论框样式的修改"><a href="#多说评论框样式的修改" class="headerlink" title="多说评论框样式的修改"></a>多说评论框样式的修改</h3><p>next主题的多说样式文件路径在</p>
+<hr>
+<p><code>your-blog\themes\next\source\css\_common\components\third-party\duoshuo.styl</code></p>
+<hr>
+<ul>
+<li><p>隐藏底部多说版权</p>
+</li>
+<li><p>添加代码<code>#ds-thread #ds-reset .ds-powered-by{display:none;}</code></p>
+</li>
+<li><p>将评论框底部的分享到微博QQ空间什么的隐藏起来</p>
+</li>
+<li><p>代码<code>#ds-thread #ds-reset .ds-sync {display:none;}</code></p>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;测试一下评论插件是否配置好&quot;&gt;&lt;a href=&quot;#测试一下评论插件是否配置好&quot; class=&quot;headerlink&quot; title=&quot;测试一下评论插件是否配置好&quot;&gt;&lt;/a&gt;测试一下评论插件是否配置好&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;按着说明文档配置了一下,见证奇迹的时候到
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://doyouz.com/2016/12/28/hello-world/"/>
+    <id>http://doyouz.com/2016/12/28/hello-world/</id>
+    <published>2016-12-28T10:31:01.554Z</published>
+    <updated>2016-12-28T10:31:01.554Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
