@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[关于next主题sidebar默认显示目录]]></title>
       <url>%2F2016%2F12%2F30%2F%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98sidebar%E9%BB%98%E8%AE%A4%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95%2F</url>
-      <content type="text"><![CDATA[发现在next主题下书写文章,如果加上了### 文章标题,next会自动生成content目录,但是每次点开一篇文章会出现一件烦人的事 看这里 就是当我们往下滑动鼠标时(pc端),侧边栏sidebar会自动显示出来 怎么解决呢 看官方文档sidebar配置 解决方案是: 先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作 1. 找到`themes\next\source\js\src\motions.js`文件 2. 在sublime中打开文件后ctrl+f输入`CONFIG.sidebar` 3. 找到`CONFIG.sidebar.display === &apos;always&apos;` 将always改为hide 做完上述步骤后,在git bash或其他终端中输入hexo s测试下吧,应该no problem了 写得不太详细,有空再补上一些文档链接 睡了 晚安 补上最新的方法:在主题配置文件中设定use motion: false即可解决上诉问题 折腾了这么久,原来so easy…]]></content>
+      <content type="text"><![CDATA[发现在next主题下书写文章,如果加上了### 文章标题,next会自动生成content目录,但是每次点开一篇文章会出现一件烦人的事 看这里 就是当我们往下滑动鼠标时(pc端),侧边栏sidebar会自动显示出来 怎么解决呢 看官方文档sidebar配置 解决方案是: 先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作 1. 找到`themes\next\source\js\src\motions.js`文件 2. 在sublime中打开文件后ctrl+f输入`CONFIG.sidebar` 3. 找到`CONFIG.sidebar.display === &apos;always&apos;` 将always改为hide 做完上述步骤后,在git bash或其他终端中输入hexo s测试下吧,应该no problem了 写得不太详细,有空再补上一些文档链接 睡了 晚安 补上最新的方法:在主题配置文件中设定use motion: false即可解决上诉问题 折腾了这么久,原来so easy… 但是这种方式又会清除所有动画效果..看来又要折腾一下了]]></content>
     </entry>
 
     
