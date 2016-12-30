@@ -116,7 +116,8 @@
 解决方案是:
 
 先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作">
-<meta property="og:updated_time" content="2016-12-30T08:35:33.273Z">
+<meta property="og:image" content="http://doyouz.com/images/sidebar配置.png">
+<meta property="og:updated_time" content="2016-12-30T09:10:24.400Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于next主题sidebar默认显示目录">
 <meta name="twitter:description" content="发现在next主题下书写文章,如果加上了### 文章标题,next会自动生成content目录,但是每次点开一篇文章会出现一件烦人的事
@@ -132,6 +133,7 @@
 解决方案是:
 
 先在主题配置文件中找到sidebar配置,将post改为hide.很多同学改了这部分发现没效果,我们进行如下操作">
+<meta name="twitter:image" content="http://doyouz.com/images/sidebar配置.png">
 
 
 
@@ -407,12 +409,18 @@
 3. 找到`CONFIG.sidebar.display === &apos;always&apos;` 将always改为hide
 </code></pre><hr>
 <p>做完上述步骤后,在git bash或其他终端中输入<code>hexo s</code>测试下吧,应该no problem了</p>
+<ul>
+<li>发现这样只是在文章页可以自动显示sidebar,看了下motion源码,首页进入后还是会在duration 200ms延迟显示sidebar</li>
+<li>最后还是回到主题的配置文件,display: hide 这条语句</li>
+<li>像这样</li>
+</ul>
+<p><img src="http://doyouz.com/images/sidebar配置.png" alt="sidebar"></p>
 <p>写得不太详细,有空再补上一些文档链接 睡了 晚安</p>
 <hr>
-<h2 id="补上最新的方法"><a href="#补上最新的方法" class="headerlink" title="补上最新的方法:"></a>补上最新的方法:</h2><p>在主题配置文件中设定<code>use motion: false</code>即可解决上诉问题</p>
+<h3 id="去除所有动画"><a href="#去除所有动画" class="headerlink" title="去除所有动画:"></a>去除所有动画:</h3><p>在主题配置文件中设定<code>use motion: false</code>即可解决上诉问题</p>
 <ul>
 <li>折腾了这么久,原来so easy…</li>
-<li>但是这种方式又会清除所有动画效果..看来又要折腾一下了</li>
+<li>但是这种方式又会清除所有动画效果..</li>
 </ul>
 <hr>
 
@@ -596,7 +604,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#补上最新的方法"><span class="nav-number">1.</span> <span class="nav-text">补上最新的方法:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#去除所有动画"><span class="nav-number">1.</span> <span class="nav-text">去除所有动画:</span></a></li></ol></div>
             
           </div>
         </section>
