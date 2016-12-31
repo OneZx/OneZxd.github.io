@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://doyouz.com/"/>
-  <updated>2016-12-31T11:04:38.133Z</updated>
+  <updated>2016-12-31T11:07:41.309Z</updated>
   <id>http://doyouz.com/</id>
   
   <author>
@@ -20,12 +20,11 @@
     <link href="http://doyouz.com/2016/12/31/next%E4%B8%BB%E9%A2%98%E5%A4%9A%E8%AF%B4%E8%AF%84%E8%AE%BA%E6%A1%86%E6%A0%B7%E5%BC%8F%E4%BF%AE%E6%94%B9/"/>
     <id>http://doyouz.com/2016/12/31/next主题多说评论框样式修改/</id>
     <published>2016-12-31T10:37:14.000Z</published>
-    <updated>2016-12-31T11:04:38.133Z</updated>
+    <updated>2016-12-31T11:07:41.309Z</updated>
     
     <content type="html"><![CDATA[<h2 id="修改多说评论框样式"><a href="#修改多说评论框样式" class="headerlink" title="修改多说评论框样式"></a>修改多说评论框样式</h2><p>在next主题下启用了多说评论框功能后,小伙伴们可能会对评论框样式不太满意,如果你懂一点CSS就好办了,找到css文件自己改改就行,如果不懂也没关系,这里给大家分享一下网上很多的一种样式,现在我用的就是这个样式.</p>
 <hr>
-<p>首先next主题多说样式文件在这个路径:</p>
-<h2 id="your-blog-path-themes-next-source-css-common-components-third-party-duoshuo-styl"><a href="#your-blog-path-themes-next-source-css-common-components-third-party-duoshuo-styl" class="headerlink" title="your-blog-path/themes/next/source/css/_common/components/third-party/duoshuo.styl"></a><code>your-blog-path/themes/next/source/css/_common/components/third-party/duoshuo.styl</code></h2><p>在这个文件的底部添加如下代码,这里我自己改动了两个样式:</p>
+<h2 id="首先next主题多说样式文件在这个路径-your-blog-path-themes-next-source-css-common-components-third-party-duoshuo-styl"><a href="#首先next主题多说样式文件在这个路径-your-blog-path-themes-next-source-css-common-components-third-party-duoshuo-styl" class="headerlink" title="首先next主题多说样式文件在这个路径:your-blog-path/themes/next/source/css/_common/components/third-party/duoshuo.styl"></a>首先next主题多说样式文件在这个路径:<code>your-blog-path/themes/next/source/css/_common/components/third-party/duoshuo.styl</code></h2><p>在这个文件的底部添加如下代码,这里我自己改动了两个样式:</p>
 <ul>
 <li><p>去掉多说版权显示<br><code>#ds-thread #ds-reset .ds-powered-by{display:none;}</code></p>
 </li>
