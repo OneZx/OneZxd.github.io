@@ -357,16 +357,18 @@
       
         
           
-            <h3 id="修改多说评论框样式"><a href="#修改多说评论框样式" class="headerlink" title="修改多说评论框样式"></a>修改多说评论框样式</h3><p>在next主题下启用了多说评论框功能后,小伙伴们可能会对评论框样式不太满意,如果你懂一点CSS就好办了,找到css文件自己改改就行,如果不懂也没关系,这里给大家分享一下网上很多的一种样式,现在我用的就是这个样式.</p>
-<p>首先next主题多说样式文件在这个路径:<br><code>your-blog-path/themes/next/source/css/_common/components/third-party/duoshuo.styl</code></p>
-<p>这里我自己改动了两个样式:</p>
+            <h2 id="修改多说评论框样式"><a href="#修改多说评论框样式" class="headerlink" title="修改多说评论框样式"></a>修改多说评论框样式</h2><p>在next主题下启用了多说评论框功能后,小伙伴们可能会对评论框样式不太满意,如果你懂一点CSS就好办了,找到css文件自己改改就行,如果不懂也没关系,这里给大家分享一下网上很多的一种样式,现在我用的就是这个样式.</p>
+<hr>
+<p>首先next主题多说样式文件在这个路径:</p>
+<h2 id="your-blog-path-themes-next-source-css-common-components-third-party-duoshuo-styl"><a href="#your-blog-path-themes-next-source-css-common-components-third-party-duoshuo-styl" class="headerlink" title="your-blog-path/themes/next/source/css/_common/components/third-party/duoshuo.styl"></a><code>your-blog-path/themes/next/source/css/_common/components/third-party/duoshuo.styl</code></h2><p>在这个文件的底部添加如下代码,这里我自己改动了两个样式:</p>
 <ul>
 <li><p>去掉多说版权显示<br><code>#ds-thread #ds-reset .ds-powered-by{display:none;}</code></p>
 </li>
 <li><p>去掉分享到微博<br><code>#ds-thread #ds-reset .ds-sync {display:none;}</code></p>
 </li>
 </ul>
-<h3 id="多说的后台自定义样式"><a href="#多说的后台自定义样式" class="headerlink" title="多说的后台自定义样式"></a>多说的后台自定义样式</h3><p>关于评论的头像样式,鼠标放上去旋转360度这种效果,需要在多说的后台自定义,如图<img src="http://doyouz.com/images/duoshuo.png" alt="duoshuo"></p>
+<hr>
+<h2 id="多说的后台自定义样式"><a href="#多说的后台自定义样式" class="headerlink" title="多说的后台自定义样式"></a>多说的后台自定义样式</h2><p>关于评论的头像样式,鼠标放上去旋转360度这种效果,需要在多说的后台自定义,如图<img src="http://doyouz.com/images/duoshuo.png" alt="duoshuo"></p>
 <p>在其中添加如下代码</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img&#123;  </div><div class="line">width:54px;height:54px; /*设置图像的长和宽*/  </div><div class="line">border-radius: 27px;/*设置图像圆角效果,在这里我直接设置了超过width/2的像素，即为圆形了*/  </div><div class="line">-webkit-border-radius: 27px;/*圆角效果：兼容webkit浏览器*/</div><div class="line">-moz-border-radius:27px;</div><div class="line">box-shadow: inset 0 -1px 0 #3333sf;/*设置图像阴影效果*/  </div><div class="line">-webkit-box-shadow: inset 0 -1px 0 #3333sf;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">#ds-reset .ds-avatar img&#123;</div><div class="line">    width:54px;height:54px; /*设置图像的长和宽*/</div><div class="line">    border-radius: 27px;/*设置图像圆角效果,在这里我直接设置了超过width/2的像素，即为圆形了*/</div><div class="line">    -webkit-border-radius: 27px;/*圆角效果：兼容webkit浏览器*/</div><div class="line">    -moz-border-radius:27px;</div><div class="line">    box-shadow: inset 0 -1px 0 #3333sf;/*设置图像阴影效果*/</div><div class="line">    -webkit-box-shadow: inset 0 -1px 0 #3333sf;</div><div class="line">    -webkit-transition: 0.4s;   </div><div class="line">    -webkit-transition: -webkit-transform 0.4s ease-out;</div><div class="line">    transition: transform 0.4s ease-out;/*变化时间设置为0.4秒(变化动作即为下面的图像旋转360读）*/</div><div class="line">        -moz-transition: -moz-transform 0.4s ease-out;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">#ds-reset .ds-avatar img:hover&#123;/*设置鼠标悬浮在头像时的CSS样式*/</div><div class="line">    box-shadow: 0 0 10px #fff; rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);</div><div class="line">    -webkit-box-shadow: 0 0 10px #fff; rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);</div><div class="line">    transform: rotateZ(360deg);/*图像旋转360度*/</div><div class="line">    -webkit-transform: rotateZ(360deg);</div><div class="line">        -moz-transform: rotateZ(360deg);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <hr>
