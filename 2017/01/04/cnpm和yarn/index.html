@@ -110,7 +110,7 @@ npm安装模块
 全局安装
 
 1$ npm install">
-<meta property="og:updated_time" content="2017-01-04T09:59:49.142Z">
+<meta property="og:updated_time" content="2017-01-04T10:03:15.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cnpm和yarn">
 <meta name="twitter:description" content="1.NPM想想还是从介绍npm开始吧.NPM是随同NodeJS一起安装的包管理工具(Node Packaged Modules),通过npm可以下载和安装nodejs的模块包.在node官网下载安装node后,自带了这个工具.
@@ -418,6 +418,7 @@ npm安装模块
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm <span class="built_in">help</span> &lt;<span class="built_in">command</span>&gt;</div></pre></td></tr></table></figure>
 <h3 id="package-json属性"><a href="#package-json属性" class="headerlink" title="package.json属性"></a>package.json属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">- name 			--包名</div><div class="line">- version 		--包的版本号</div><div class="line">- description	--包的描述</div><div class="line">- homepage		--包的官网url</div><div class="line">- author 		--包的作者姓名</div><div class="line">- contributors  --包的其他贡献者姓名</div><div class="line">- dependencies  --依赖包列表</div><div class="line">- repository    --包代码存放的地方的类型</div><div class="line">- main 			--main字段是一个模块ID,它是一个指向你程序的主要项目</div><div class="line">- keywords 		--关键字</div></pre></td></tr></table></figure>
+<hr>
 <h2 id="CNPM"><a href="#CNPM" class="headerlink" title="CNPM"></a>CNPM</h2><p>CNPM其实就是<code>淘宝NPM镜像</code>,这是一个完整npmjs.org镜像,可以用此代替官方版本(只读),同步频率目前为<code>10分钟</code>一次以保证尽量与官方服务同步.</p>
 <p>因为npm安装package是从国外服务器下载,速度会受较大影响.如果npm的服务器在国内就会大大的提高下载速度,于是淘宝团队就将整个服务端包都复制了一模一样的,10分钟更新一次,方便国内用户下载</p>
 <p>cnpm官网<a href="https://npm.taobao.org/" target="_blank" rel="external">CNPM</a></p>
@@ -436,6 +437,7 @@ npm安装模块
 <blockquote>
 <p>cnpm不能使用<code>cnpm publish</code></p>
 </blockquote>
+<hr>
 <h2 id="使用nrm快速切换npm源"><a href="#使用nrm快速切换npm源" class="headerlink" title="使用nrm快速切换npm源"></a>使用nrm快速切换npm源</h2><p>nrm是一个npm源管理器,能让我们在npm源间快速切换.nrm的github<a href="https://github.com/Pana/nrm" target="_blank" rel="external">nrm</a></p>
 <blockquote>
 <p>install</p>
@@ -463,6 +465,7 @@ npm安装模块
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm <span class="built_in">test</span></div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">  npm ---- 891ms</div><div class="line">  cnpm --- 1213ms</div><div class="line">* taobao - 460ms</div><div class="line">  eu ----- 3859ms</div><div class="line">  au ----- 1073ms</div><div class="line">  sl ----- 4150ms</div><div class="line">  nj ----- 8008ms</div></pre></td></tr></table></figure>
+<hr>
 <h2 id="yarn"><a href="#yarn" class="headerlink" title="yarn"></a>yarn</h2><p>终于写到yarn了,yarn是facebook在16年10月11日公开的js包管理工具,用来替代目前广泛使用的npm.yarn的github项目地址<a href="https://github.com/yarnpkg/yarn" target="_blank" rel="external">yarn</a>.可以看到目前(17年01.04)已有2万多Star了.</p>
 <p>yarn和npm都作为nodejs的包管理工具.但相比npm.yarn具有的新亮点如下</p>
 <ul>
