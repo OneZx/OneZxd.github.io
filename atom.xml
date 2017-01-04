@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://doyouz.com/"/>
-  <updated>2017-01-04T09:52:06.690Z</updated>
+  <updated>2017-01-04T09:59:49.142Z</updated>
   <id>http://doyouz.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://doyouz.com/2017/01/04/cnpm%E5%92%8Cyarn/"/>
     <id>http://doyouz.com/2017/01/04/cnpm和yarn/</id>
     <published>2017-01-04T08:04:04.000Z</published>
-    <updated>2017-01-04T09:52:06.690Z</updated>
+    <updated>2017-01-04T09:59:49.142Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1-NPM"><a href="#1-NPM" class="headerlink" title="1.NPM"></a>1.NPM</h2><p>想想还是从介绍npm开始吧.NPM是随同NodeJS一起安装的包管理工具(Node Packaged Modules),通过npm可以下载和安装nodejs的模块包.在node官网下载安装node后,自带了这个工具.</p>
 <p>附上<a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">Nodejs官网</a></p>
@@ -29,9 +29,17 @@
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install &lt;Module Name&gt;</div></pre></td></tr></table></figure>
 <blockquote>
-<p>npm全局安装和本地安装</p>
+<p>全局安装</p>
 </blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">$ npm install express    本地安装</div><div class="line">$ npm install express -g 全局安装</div><div class="line">``` </div><div class="line">---</div><div class="line"></div><div class="line">&gt; 卸载模块</div><div class="line"></div><div class="line">```bash</div><div class="line">$ npm uninstall &lt;Module Name&gt;</div><div class="line">``` </div><div class="line">&gt; 查看模块</div><div class="line"></div><div class="line">```bash</div><div class="line">$ npm ls</div><div class="line"><span class="comment">#在/node_modules/ 目录下查看包是否还存在</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install &lt;M&gt; -g <span class="comment">#全局</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>卸载模块</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm uninstall &lt;Module Name&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>查看模块</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm ls</div></pre></td></tr></table></figure>
 <blockquote>
 <p>更新模块</p>
 </blockquote>
