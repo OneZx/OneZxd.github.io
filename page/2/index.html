@@ -278,6 +278,149 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/31/next主题多说评论框样式修改/" itemprop="url">
+                  next主题多说评论框样式修改
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-12-31T18:37:14+08:00" content="2016-12-31">
+              2016-12-31
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/31/next主题多说评论框样式修改/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/31/next主题多说评论框样式修改/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/31/next主题多说评论框样式修改/" class="leancloud_visitors" data-flag-title="next主题多说评论框样式修改">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="修改多说评论框样式"><a href="#修改多说评论框样式" class="headerlink" title="修改多说评论框样式"></a>修改多说评论框样式</h2><p>在next主题下启用了多说评论框功能后,小伙伴们可能会对评论框样式不太满意,如果你懂一点CSS就好办了,找到css文件自己改改就行,如果不懂也没关系,这里给大家分享一下网上很多的一种样式,现在我用的就是这个样式.</p>
+<hr>
+<h2 id="首先next主题多说样式文件在这个路径-your-blog-path-themes-next-source-css-common-components-third-party-duoshuo-styl"><a href="#首先next主题多说样式文件在这个路径-your-blog-path-themes-next-source-css-common-components-third-party-duoshuo-styl" class="headerlink" title="首先next主题多说样式文件在这个路径:your-blog-path/themes/next/source/css/_common/components/third-party/duoshuo.styl"></a>首先next主题多说样式文件在这个路径:<code>your-blog-path/themes/next/source/css/_common/components/third-party/duoshuo.styl</code></h2><p>在这个文件的底部添加如下代码,这里我自己改动了两个样式:</p>
+<ul>
+<li><p>去掉多说版权显示<br><code>#ds-thread #ds-reset .ds-powered-by{display:none;}</code></p>
+</li>
+<li><p>去掉分享到微博<br><code>#ds-thread #ds-reset .ds-sync {display:none;}</code></p>
+</li>
+</ul>
+<hr>
+<h2 id="多说的后台自定义样式"><a href="#多说的后台自定义样式" class="headerlink" title="多说的后台自定义样式"></a>多说的后台自定义样式</h2><p>关于评论的头像样式,鼠标放上去旋转360度这种效果,需要在多说的后台自定义,如图<img src="http://doyouz.com/images/duoshuo.png" alt="duoshuo"></p>
+<p>在其中添加如下代码</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img&#123;  </div><div class="line">width:54px;height:54px; </div><div class="line">border-radius: 27px;</div><div class="line">-webkit-border-radius: 27px;</div><div class="line">-moz-border-radius:27px;</div><div class="line">box-shadow: inset 0 -1px 0 #3333sf; </div><div class="line">-webkit-box-shadow: inset 0 -1px 0 #3333sf;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">#ds-reset .ds-avatar img&#123;</div><div class="line">width:54px;height:54px; </div><div class="line">border-radius: 27px;</div><div class="line">-webkit-border-radius: 27px;</div><div class="line">-moz-border-radius:27px;</div><div class="line">box-shadow: inset 0 -1px 0 #3333sf;</div><div class="line">-webkit-box-shadow: inset 0 -1px 0 #3333sf;</div><div class="line">-webkit-transition: 0.4s;   </div><div class="line">-webkit-transition: -webkit-transform 0.4s ease-out;</div><div class="line">transition: transform 0.4s ease-out;</div><div class="line">-moz-transition: -moz-transform 0.4s ease-out;</div><div class="line">&#125;</div><div class="line"></div><div class="line">#ds-reset .ds-avatar img:hover&#123;</div><div class="line">box-shadow: 0 0 10px #fff; rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);</div><div class="line">-webkit-box-shadow: 0 0 10px #fff; rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);</div><div class="line">transform: rotateZ(360deg);</div><div class="line">-webkit-transform: rotateZ(360deg);</div><div class="line">-moz-transform: rotateZ(360deg);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<p>即使你不懂css也没关系,直接复制粘贴就好.之后再<code>hexo s</code>本地预览一下看看效果吧.</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/30/关于next主题sidebar默认显示目录/" itemprop="url">
                   关于next主题sidebar默认显示目录
                 </a>
@@ -537,162 +680,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/29/hexo的一些书签/" itemprop="url">
-                  hexo的一些书签
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-12-29T00:05:05+08:00" content="2016-12-29">
-              2016-12-29
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/12/29/hexo的一些书签/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/29/hexo的一些书签/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/12/29/hexo的一些书签/" class="leancloud_visitors" data-flag-title="hexo的一些书签">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">visitors </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="一些觉得不错的文章"><a href="#一些觉得不错的文章" class="headerlink" title="一些觉得不错的文章"></a>一些觉得不错的文章</h3><ol>
-<li><a href="http://www.jianshu.com/p/17fdcf17bbb4" target="_blank" rel="external">Markdown:让书写更美好</a></li>
-<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">hexo官方中文文档</a></li>
-<li><a href="http://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="external">hexo搭建github博客</a></li>
-<li><a href="http://www.jianshu.com/p/db7e64d86067" target="_blank" rel="external">hexo博客配置-主题-写作</a></li>
-<li><a href="http://www.jianshu.com/p/aa30cc25c91b" target="_blank" rel="external">Sublime插件:Markdown篇</a></li>
-<li><a href="http://www.jianshu.com/p/7bd4e6ed99be" target="_blank" rel="external">简化markdown写作中的贴图流程</a></li>
-</ol>
-<hr>
-<h3 id="sublime-Text3-OmniMarkupPreviewer-404"><a href="#sublime-Text3-OmniMarkupPreviewer-404" class="headerlink" title="sublime-Text3 OmniMarkupPreviewer 404"></a>sublime-Text3 OmniMarkupPreviewer 404</h3><blockquote>
-<p>关于sublime插件bug</p>
-</blockquote>
-<p>sublime的<code>OmniMarkupPreviewer</code>插件出现这个问题解决办法,在以下路径中添加图中代码<br><img src="http://doyouz.com/images/12-29-sublime.png" alt="solution"></p>
-<p>在下面复制代码,上面这是图片,后来才意识到用代码方便大家复制<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="string">"renderer_options-MarkdownRenderer"</span>: &#123;</div><div class="line">        <span class="string">"extensions"</span>: [<span class="string">"tables"</span>, <span class="string">"fenced_code"</span>, <span class="string">"codehilite"</span>]</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<hr>
-<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><ul>
-<li>markdown引用图片路径时</li>
-<li>在blog的source文件夹中新建一个images文件夹</li>
-<li>然后把图片放在images文件夹里<code>![text](/images/img.png)</code> </li>
-<li>这样方便管理图片</li>
-<li>发现bug: <code>{上诉地址只在hexo主页面能显示} 文章页面无法显示图片</code></li>
-</ul>
-<hr>
-<ul>
-<li>由于hexo的主页路由和文章页面路由配置不同,使用相对地址后图片在主页渲染出来,在文章页无法显示,故:</li>
-<li>图片得用网上绝对地址,先上传图片到github</li>
-<li>使用绝对地址定义<code>![text](http://doyouz.com/images/img.png)</code></li>
-</ul>
-<blockquote class="blockquote-center"><h2>You got a dream, you gotta protect it. People can’t do something themselves,they wanna tell you you can’t do it.If you want something, go get it. Period.</h2> </blockquote>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -738,7 +725,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
