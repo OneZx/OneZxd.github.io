@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://doyouz.com/"/>
-  <updated>2017-01-04T12:24:23.695Z</updated>
+  <updated>2017-01-05T15:25:45.387Z</updated>
   <id>http://doyouz.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从前车马很慢</title>
+    <link href="http://doyouz.com/2017/01/05/%E4%BB%8E%E5%89%8D%E8%BD%A6%E9%A9%AC%E5%BE%88%E6%85%A2/"/>
+    <id>http://doyouz.com/2017/01/05/从前车马很慢/</id>
+    <published>2017-01-05T15:24:41.000Z</published>
+    <updated>2017-01-05T15:25:45.387Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>从前车马很慢 书信很远 一生只够爱一个人</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;从前车马很慢 书信很远 一生只够爱一个人&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    
+    </summary>
+    
+      <category term="personal" scheme="http://doyouz.com/categories/personal/"/>
+    
+    
+      <category term="time" scheme="http://doyouz.com/tags/time/"/>
+    
+  </entry>
   
   <entry>
     <title>cnpm和yarn</title>
