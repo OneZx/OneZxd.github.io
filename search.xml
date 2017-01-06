@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[函数的四种调用模式]]></title>
+      <url>%2F2017%2F01%2F06%2F%E5%87%BD%E6%95%B0%E7%9A%84%E5%9B%9B%E7%A7%8D%E8%B0%83%E7%94%A8%E6%A8%A1%E5%BC%8F%2F</url>
+      <content type="text"><![CDATA[以前在gitbook上总结的,这里直接贴过来了. 函数调用的四种模式 函数调用模式 方法模式 构造器调用模式 上下文模式 1. 函数模式 就是通过函数来调用，规范写法为：function fn(){}; fn(); 函数中this指向=&gt;window 1234567891011// 声明式函数function fn1 () &#123;console.log(this);&#125;//表达式函数var fn2 = function()&#123;console.log(this);&#125;//调用 这种调用模式函数中this表示全局对象,在浏览器中指windowfn1(); //windowfn2(); //window 2. 方法模式 函数依附于一个对象，是对象的一个属性，我们再调用这个函数。这种模式就是方法调用模式。 1234567var obj = &#123;name:"jack",sayHi:function()&#123;console.log(this);&#125;&#125;;obj.sayHi(); // obj对象 3. 构造器调用模式 即构造函数的调用，一般是通过new + 函数名( ),此方式中this指向new创建的新对象 1234function Foo()&#123;console.log(this); //Foo&#125;var f1=new Foo(); 构造函数的返回值: 默认返回值是新创建的对象(实例) 当手动添加返回值后(return语句) 返回值是基本数据类型(值类型)=&gt;真正的返回值还是那个新创建的对象（即实例） 返回值是复杂数据类型(对象)=&gt;返回值是这个对象 构造函数调用例子 如果一个函数的返回值是一个值类型，那么这个函数作为构造函数用new运算符执行构造时，它的返回值将被丢弃。new 表达式的结果仍然是this所引用的对象。 12345678function test()&#123;this.a=10;return 1;&#125;var m=new test();var n=test();console.log(m);// 返回Object=&gt;testconsole.log(n);// 返回1 如果一个函数的返回值是引用类型（数组，对象或者函数）的数据，那么这个函数作为构造函数用new运算符执行构造时，运算的结果将被它的返回值取代，这时候，构造函数体内的this值丢失了，取而代之的是被返回的对象 12345678910function test()&#123;this.a=10;return function()&#123;return 1;&#125;&#125;var m = new test();var n = test();console.log(m);//返回return后面的闭包 function()&#123;return 1;&#125;console.log(n);//返回return后面的闭包 function()&#123;return 1;&#125; 4. 上下文模式 本质–对象借用不属于该对象的方法(函数),即,我们自定义this的指向;这时候需要call和apply这两个方法]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Piper]]></title>
       <url>%2F2017%2F01%2F06%2FPiper%2F</url>
       <content type="text"><![CDATA[后来啊,我再也不害怕海浪了中午看了pixar的短片，片名叫piper,中文名鹬,鹬蚌相争的鹬.从创意筹备加上影片制作,这部短片前前后后大约花了三年时间.一看到这个介绍,我就觉得很惊讶,才6分钟的小短片呀,需要花3年吗.不过看完后又不得不佩服这公司的制作水平,带给我们很多细节上的极致美感. 片中的小piper萌萌哒的样子很可爱,而这个动画短片的画质又美得无可挑剔,一切都是那么真实而美好.总之,很喜欢这个小短片. 这里贴出腾讯的资源. 另外,建议看高清的资源,附上B站的piper高清资源转送口 好了,以后还是多写写IT技术类文章~~ As long as it is a comedy, I’d rather cry during the process.]]></content>

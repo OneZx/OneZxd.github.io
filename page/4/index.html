@@ -278,6 +278,162 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/29/hexo的一些书签/" itemprop="url">
+                  hexo的一些书签
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-12-29T00:05:05+08:00" content="2016-12-29">
+              2016-12-29
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/29/hexo的一些书签/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/29/hexo的一些书签/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/29/hexo的一些书签/" class="leancloud_visitors" data-flag-title="hexo的一些书签">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="一些觉得不错的文章"><a href="#一些觉得不错的文章" class="headerlink" title="一些觉得不错的文章"></a>一些觉得不错的文章</h3><ol>
+<li><a href="http://www.jianshu.com/p/17fdcf17bbb4" target="_blank" rel="external">Markdown:让书写更美好</a></li>
+<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">hexo官方中文文档</a></li>
+<li><a href="http://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="external">hexo搭建github博客</a></li>
+<li><a href="http://www.jianshu.com/p/db7e64d86067" target="_blank" rel="external">hexo博客配置-主题-写作</a></li>
+<li><a href="http://www.jianshu.com/p/aa30cc25c91b" target="_blank" rel="external">Sublime插件:Markdown篇</a></li>
+<li><a href="http://www.jianshu.com/p/7bd4e6ed99be" target="_blank" rel="external">简化markdown写作中的贴图流程</a></li>
+</ol>
+<hr>
+<h3 id="sublime-Text3-OmniMarkupPreviewer-404"><a href="#sublime-Text3-OmniMarkupPreviewer-404" class="headerlink" title="sublime-Text3 OmniMarkupPreviewer 404"></a>sublime-Text3 OmniMarkupPreviewer 404</h3><blockquote>
+<p>关于sublime插件bug</p>
+</blockquote>
+<p>sublime的<code>OmniMarkupPreviewer</code>插件出现这个问题解决办法,在以下路径中添加图中代码<br><img src="http://doyouz.com/images/12-29-sublime.png" alt="solution"></p>
+<p>在下面复制代码,上面这是图片,后来才意识到用代码方便大家复制<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="string">"renderer_options-MarkdownRenderer"</span>: &#123;</div><div class="line">        <span class="string">"extensions"</span>: [<span class="string">"tables"</span>, <span class="string">"fenced_code"</span>, <span class="string">"codehilite"</span>]</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<hr>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><ul>
+<li>markdown引用图片路径时</li>
+<li>在blog的source文件夹中新建一个images文件夹</li>
+<li>然后把图片放在images文件夹里<code>![text](/images/img.png)</code> </li>
+<li>这样方便管理图片</li>
+<li>发现bug: <code>{上诉地址只在hexo主页面能显示} 文章页面无法显示图片</code></li>
+</ul>
+<hr>
+<ul>
+<li>由于hexo的主页路由和文章页面路由配置不同,使用相对地址后图片在主页渲染出来,在文章页无法显示,故:</li>
+<li>图片得用网上绝对地址,先上传图片到github</li>
+<li>使用绝对地址定义<code>![text](http://doyouz.com/images/img.png)</code></li>
+</ul>
+<blockquote class="blockquote-center"><h2>You got a dream, you gotta protect it. People can’t do something themselves,they wanna tell you you can’t do it.If you want something, go get it. Period.</h2> </blockquote>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/28/测试评论功能/" itemprop="url">
                   测试评论功能
                 </a>
@@ -568,7 +724,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -576,7 +732,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -585,7 +741,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

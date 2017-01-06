@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://doyouz.com/"/>
-  <updated>2017-01-06T09:19:04.580Z</updated>
+  <updated>2017-01-06T09:41:25.510Z</updated>
   <id>http://doyouz.com/</id>
   
   <author>
@@ -14,6 +14,72 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>函数的四种调用模式</title>
+    <link href="http://doyouz.com/2017/01/06/%E5%87%BD%E6%95%B0%E7%9A%84%E5%9B%9B%E7%A7%8D%E8%B0%83%E7%94%A8%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://doyouz.com/2017/01/06/函数的四种调用模式/</id>
+    <published>2017-01-06T09:37:54.000Z</published>
+    <updated>2017-01-06T09:41:25.510Z</updated>
+    
+    <content type="html"><![CDATA[<p>以前在gitbook上总结的,这里直接贴过来了.</p>
+<h3 id="函数调用的四种模式"><a href="#函数调用的四种模式" class="headerlink" title="函数调用的四种模式"></a>函数调用的四种模式</h3><ul>
+<li>函数调用模式</li>
+<li>方法模式</li>
+<li>构造器调用模式</li>
+<li>上下文模式</li>
+</ul>
+<h4 id="1-函数模式"><a href="#1-函数模式" class="headerlink" title="1. 函数模式"></a>1. 函数模式</h4><blockquote>
+<p>就是通过函数来调用，规范写法为：<code>function fn(){}; fn()</code>; 函数中<code>this</code>指向=&gt;<code>window</code></p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 声明式函数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn1</span> (<span class="params"></span>) </span>&#123;</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line"><span class="comment">//表达式函数</span></div><div class="line"><span class="keyword">var</span> fn2 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line"><span class="comment">//调用 这种调用模式函数中this表示全局对象,在浏览器中指window</span></div><div class="line">fn1(); <span class="comment">//window</span></div><div class="line">fn2(); <span class="comment">//window</span></div></pre></td></tr></table></figure>
+<h4 id="2-方法模式"><a href="#2-方法模式" class="headerlink" title="2. 方法模式"></a>2. 方法模式</h4><blockquote>
+<p>函数依附于一个对象，是对象的一个属性，我们再调用这个函数。这种模式就是方法调用模式。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line"><span class="attr">name</span>:<span class="string">"jack"</span>,</div><div class="line"><span class="attr">sayHi</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line">&#125;;</div><div class="line">obj.sayHi(); <span class="comment">// obj对象</span></div></pre></td></tr></table></figure>
+<h4 id="3-构造器调用模式"><a href="#3-构造器调用模式" class="headerlink" title="3. 构造器调用模式"></a>3. 构造器调用模式</h4><blockquote>
+<p>即构造函数的调用，一般是通过new + 函数名( ),此方式中this指向new创建的新对象</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Foo</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>); <span class="comment">//Foo</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> f1=<span class="keyword">new</span> Foo();</div></pre></td></tr></table></figure>
+<ul>
+<li>构造函数的返回值:</li>
+<li>默认返回值是新创建的对象(实例)</li>
+<li>当手动添加返回值后(<code>return</code>语句)</li>
+</ul>
+<ol>
+<li>返回值是基本数据类型(值类型)=&gt;真正的返回值还是那个新创建的对象（即实例）</li>
+<li>返回值是复杂数据类型(对象)=&gt;返回值是这个对象</li>
+</ol>
+<blockquote>
+<p>构造函数调用例子</p>
+</blockquote>
+<ul>
+<li>如果一个函数的返回值是一个值类型，那么这个函数作为构造函数用new运算符执行构造时，它的返回值将被丢弃。new 表达式的结果仍然是this所引用的对象。</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="keyword">this</span>.a=<span class="number">10</span>;</div><div class="line"><span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> m=<span class="keyword">new</span> test();</div><div class="line"><span class="keyword">var</span> n=test();</div><div class="line"><span class="built_in">console</span>.log(m);<span class="comment">// 返回Object=&gt;test</span></div><div class="line"><span class="built_in">console</span>.log(n);<span class="comment">// 返回1</span></div></pre></td></tr></table></figure>
+<ul>
+<li>如果一个函数的返回值是引用类型（数组，对象或者函数）的数据，那么这个函数作为构造函数用new运算符执行构造时，运算的结果将被它的返回值取代，这时候，构造函数体内的this值丢失了，取而代之的是被返回的对象</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="keyword">this</span>.a=<span class="number">10</span>;</div><div class="line"><span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">&#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> m = <span class="keyword">new</span> test();</div><div class="line"><span class="keyword">var</span> n = test();</div><div class="line"><span class="built_in">console</span>.log(m);<span class="comment">//返回return后面的闭包 function()&#123;return 1;&#125;</span></div><div class="line"><span class="built_in">console</span>.log(n);<span class="comment">//返回return后面的闭包 function()&#123;return 1;&#125;</span></div></pre></td></tr></table></figure>
+<h4 id="4-上下文模式"><a href="#4-上下文模式" class="headerlink" title="4. 上下文模式"></a>4. 上下文模式</h4><blockquote>
+<p>本质–对象借用不属于该对象的方法(函数),即,我们自定义this的指向;这时候需要<code>call</code>和<code>apply</code>这两个方法</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以前在gitbook上总结的,这里直接贴过来了.&lt;/p&gt;
+&lt;h3 id=&quot;函数调用的四种模式&quot;&gt;&lt;a href=&quot;#函数调用的四种模式&quot; class=&quot;headerlink&quot; title=&quot;函数调用的四种模式&quot;&gt;&lt;/a&gt;函数调用的四种模式&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;函数调用
+    
+    </summary>
+    
+      <category term="front-end" scheme="http://doyouz.com/categories/front-end/"/>
+    
+    
+      <category term="JavaScript" scheme="http://doyouz.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>Piper</title>
