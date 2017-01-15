@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://doyouz.com/"/>
-  <updated>2017-01-06T09:41:25.510Z</updated>
+  <updated>2017-01-15T13:57:07.769Z</updated>
   <id>http://doyouz.com/</id>
   
   <author>
@@ -14,6 +14,89 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>about尤大大在知乎的回答</title>
+    <link href="http://doyouz.com/2017/01/15/about%E5%B0%A4%E5%A4%A7%E5%A4%A7%E5%9C%A8%E7%9F%A5%E4%B9%8E%E7%9A%84%E5%9B%9E%E7%AD%94/"/>
+    <id>http://doyouz.com/2017/01/15/about尤大大在知乎的回答/</id>
+    <published>2017-01-15T13:09:10.000Z</published>
+    <updated>2017-01-15T13:57:07.769Z</updated>
+    
+    <content type="html"><![CDATA[<p>最开始是在微信朋友圈看到csdn的秋歌姐转的一篇文章<br><img src="http://doyouz.com/images/前端2016-错误.jpg" alt="2016前端">,</p>
+<ul>
+<li>这里贴出<a href="http://geek.csdn.net/news/detail/128912" target="_blank" rel="external">原文地址</a></li>
+</ul>
+<hr>
+<p>当时自己看了后对文中很多观点不赞成,太激进,确实过于保守.想着我还只是一名前端小渣渣,都有点怀疑自己走的道路对不对了,重基础固然重要,但敢于接受新事物,接受挑战不正是年轻人所必备的一些东西吗~ </p>
+<p>后来啊我想,老一辈人的话还是得有取舍的看待.延伸开来,很多道理也都是这样啊.不能说一个现在比你牛的人说的话就一定对,即使是站在权威点的声音我们也都应该敢于质疑.(还好,文中作者还不是权威,也许当年牛过一时,but now我对他没有任何好感=_=)</p>
+<p>然后呢,今天又在知乎上看到了尤大大的这篇回答.</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/53625757/answer/136074366" target="_blank" rel="external">尤大大的回答</a></li>
+</ul>
+<p>主观上,个人是很赞成尤大的论述的,逻辑思路清晰,论证有理有据.看完回答后,自己又开始思考其中的几点.</p>
+<hr>
+<ul>
+<li>不能靠经验主义,实践是检验真理的唯一标准.</li>
+</ul>
+<p>哇哈哈,虽然是老话,现在觉得真是很有道理呀.</p>
+<ul>
+<li>敢于接受新事物,敢于创新</li>
+</ul>
+<p>首先IT这行业就是日新月异的,发展变化都快.很多东西可能今天还引领一个潮流,过两天就末日黄花了.所以呢,不断去探索一些新事物,真是很棒的感觉,然后关于很多人会担忧现在所学的会过时,其实也不必太在乎,学呀,不断的学呀,这个过程中对自己学习能力的提升,知识的积累不都是岁月所沉淀下来的财富吗?</p>
+<ul>
+<li>重基础</li>
+</ul>
+<p>值得一提的是,基础的确也特别重要,看到一个梗, Homebrew作者解不出google面试题，被残忍拒绝,然后在twitter上发文.<br><img src="http://doyouz.com/images/homebrew.png" alt="homebrew"></p>
+<ul>
+<li>翻译<code>Google：虽然我们90%的工程师都在用你写的Homebrew，但这也并没有什么卵用，你连二叉树翻转都写不出，直接滚蛋吧！</code></li>
+<li>相关背景 <code>Homebrew是Mac OS上一套流行的软件包管理工具，可以通过命令行搜索、安装、卸载软件包</code></li>
+</ul>
+<p>所以这个事件告诉同学们,基础什么的还是得打牢实,不然再牛也还是会被google拒(坏笑).</p>
+<hr>
+<p>Ps.我也想进Google,请问从现在开始大概需要准备些什么(只是想想,哈哈哈哈哈哈)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最开始是在微信朋友圈看到csdn的秋歌姐转的一篇文章&lt;br&gt;&lt;img src=&quot;http://doyouz.com/images/前端2016-错误.jpg&quot; alt=&quot;2016前端&quot;&gt;,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这里贴出&lt;a href=&quot;http://geek.csdn
+    
+    </summary>
+    
+      <category term="front-end" scheme="http://doyouz.com/categories/front-end/"/>
+    
+    
+      <category term="zhihu" scheme="http://doyouz.com/tags/zhihu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webpack</title>
+    <link href="http://doyouz.com/2017/01/14/webpack/"/>
+    <id>http://doyouz.com/2017/01/14/webpack/</id>
+    <published>2017-01-14T15:19:31.000Z</published>
+    <updated>2017-01-14T15:24:26.638Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="what-is-webpack"><a href="#what-is-webpack" class="headerlink" title="what is webpack ?"></a>what is webpack ?</h3><p>webpack是一个模块打包器,它将根据模块的依赖关系进行静态分析，然后将这些模块按照指定的规则生成对应的静态资源。</p>
+<ul>
+<li>下面是示意图:</li>
+</ul>
+<p><img src="http://doyouz.com/images/what-is-webpack0.png" alt="webpack"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;what-is-webpack&quot;&gt;&lt;a href=&quot;#what-is-webpack&quot; class=&quot;headerlink&quot; title=&quot;what is webpack ?&quot;&gt;&lt;/a&gt;what is webpack ?&lt;/h3&gt;&lt;p&gt;webpack是一个模块打包
+    
+    </summary>
+    
+      <category term="front-end" scheme="http://doyouz.com/categories/front-end/"/>
+    
+    
+      <category term="webpack" scheme="http://doyouz.com/tags/webpack/"/>
+    
+  </entry>
   
   <entry>
     <title>函数的四种调用模式</title>
@@ -296,7 +379,7 @@
     <link href="http://doyouz.com/2017/01/03/%E8%B7%A8%E5%9F%9F/"/>
     <id>http://doyouz.com/2017/01/03/跨域/</id>
     <published>2017-01-03T15:56:07.000Z</published>
-    <updated>2017-01-04T08:09:55.819Z</updated>
+    <updated>2017-01-15T13:09:32.381Z</updated>
     
     <content type="html"><![CDATA[<h2 id="跨域和跨域的几种方式"><a href="#跨域和跨域的几种方式" class="headerlink" title="跨域和跨域的几种方式"></a>跨域和跨域的几种方式</h2><p>一直想总结下有关跨域的知识点,趁着现在有点时间,敲敲写写也是不错的.</p>
 <blockquote>
@@ -352,7 +435,7 @@
     
     </summary>
     
-      <category term="前端" scheme="http://doyouz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="front-end" scheme="http://doyouz.com/categories/front-end/"/>
     
     
       <category term="jsonp" scheme="http://doyouz.com/tags/jsonp/"/>
