@@ -77,14 +77,14 @@
     <link href="http://doyouz.com/2017/01/14/webpack/"/>
     <id>http://doyouz.com/2017/01/14/webpack/</id>
     <published>2017-01-14T15:19:31.000Z</published>
-    <updated>2017-01-14T15:24:26.638Z</updated>
+    <updated>2017-01-16T16:51:09.133Z</updated>
     
     <content type="html"><![CDATA[<h3 id="what-is-webpack"><a href="#what-is-webpack" class="headerlink" title="what is webpack ?"></a>what is webpack ?</h3><p>webpack是一个模块打包器,它将根据模块的依赖关系进行静态分析，然后将这些模块按照指定的规则生成对应的静态资源。</p>
 <ul>
 <li>下面是示意图:</li>
 </ul>
 <p><img src="http://doyouz.com/images/what-is-webpack0.png" alt="webpack"></p>
-]]></content>
+<blockquote class="blockquote-center"><h3>Accept what was and what is, and you’ll have more positive energy to pursue what will be.</h3> </blockquote>]]></content>
     
     <summary type="html">
     
