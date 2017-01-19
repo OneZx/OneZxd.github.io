@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://doyouz.com/"/>
-  <updated>2017-01-16T15:32:32.091Z</updated>
+  <updated>2017-01-19T11:13:11.432Z</updated>
   <id>http://doyouz.com/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CommonJs-CMD-AMD</title>
+    <link href="http://doyouz.com/2017/01/19/CommonJs-CMD-AMD/"/>
+    <id>http://doyouz.com/2017/01/19/CommonJs-CMD-AMD/</id>
+    <published>2017-01-19T11:11:59.000Z</published>
+    <updated>2017-01-19T11:13:11.432Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="区分三者"><a href="#区分三者" class="headerlink" title="区分三者"></a>区分三者</h3><p>关于Js中的模块化规范(CommonJS，AMD，CMD),很多人可能分不清三者之间到底是什么关系,下面我来梳理梳理,let’s get started.</p>
+<h4 id="CommonJs"><a href="#CommonJs" class="headerlink" title="CommonJs"></a>CommonJs</h4><p>由于Js语言本身设计时间仓促,缺少类等(ES5),没有模块化的思想,在一个js中不能引入另一个js文件.开发人员就为js的模块化制定了一套规范,取名CommonJs.而NodeJs是这种规范在后台的实现.</p>
+<p>注意,<code>CommonJs加载模块是同步的</code>,只有加载完成一个模块后才能执行后面的操作.而Node.js主要用于服务器的编程,加载的模块文件一般存在本地,加载快,不用考虑异步加载的方式.所以CommonJs规范比较适用.but呢,如果实在浏览器环境,我们要从服务器中加载模块,这里就必须采用异步模式. 于是,在前端产生了AMD和CMD两种方案.</p>
+<h4 id="AMD-Asynchromous-Module-Definition"><a href="#AMD-Asynchromous-Module-Definition" class="headerlink" title="AMD(Asynchromous Module Definition)"></a>AMD(Asynchromous Module Definition)</h4><ul>
+<li>AMD 是 RequireJS 在推广过程中对模块定义的规范化产出</li>
+<li>AMD异步加载模块。<br>它的模块支持对象 函数 构造器 字符串 JSON等各种类型的模块。 </li>
+</ul>
+<h4 id="CMD（Common-Module-Definition）"><a href="#CMD（Common-Module-Definition）" class="headerlink" title="CMD（Common Module Definition）"></a>CMD（Common Module Definition）</h4>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;区分三者&quot;&gt;&lt;a href=&quot;#区分三者&quot; class=&quot;headerlink&quot; title=&quot;区分三者&quot;&gt;&lt;/a&gt;区分三者&lt;/h3&gt;&lt;p&gt;关于Js中的模块化规范(CommonJS，AMD，CMD),很多人可能分不清三者之间到底是什么关系,下面我来梳理梳理,let
+    
+    </summary>
+    
+      <category term="front-end" scheme="http://doyouz.com/categories/front-end/"/>
+    
+    
+      <category term="modules" scheme="http://doyouz.com/tags/modules/"/>
+    
+  </entry>
   
   <entry>
     <title>about尤大大在知乎的回答</title>

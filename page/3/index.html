@@ -278,6 +278,255 @@
             
               
                 
+                <a class="post-title-link" href="/2017/01/04/cnpm和yarn/" itemprop="url">
+                  cnpm和yarn
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-01-04T16:04:04+08:00" content="2017-01-04">
+              2017-01-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/01/04/cnpm和yarn/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/04/cnpm和yarn/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/01/04/cnpm和yarn/" class="leancloud_visitors" data-flag-title="cnpm和yarn">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-NPM"><a href="#1-NPM" class="headerlink" title="1.NPM"></a>1.NPM</h2><p>想想还是从介绍npm开始吧.NPM是随同NodeJS一起安装的包管理工具(Node Packaged Modules),通过npm可以下载和安装nodejs的模块包.在node官网下载安装node后,自带了这个工具.</p>
+<p>附上<a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">Nodejs官网</a></p>
+<h3 id="npm的简单指令"><a href="#npm的简单指令" class="headerlink" title="npm的简单指令"></a>npm的简单指令</h3><blockquote>
+<p>npm安装模块</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install &lt;Module Name&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>全局安装</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install &lt;M&gt; -g <span class="comment">#全局</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>卸载模块</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm uninstall &lt;Module Name&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>查看模块</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm ls</div></pre></td></tr></table></figure>
+<blockquote>
+<p>更新模块</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm update &lt;Module Name&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>搜索模块</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm search &lt;Module Name&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>创建模块</p>
+</blockquote>
+<p>即模块初始化,创建模块时,package.json文件不可少,可以使用生成这个文件.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm init</div></pre></td></tr></table></figure>
+<blockquote>
+<p>安装并作为package.json的一个依赖(dependency)</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install &lt;pkg&gt; --save</div></pre></td></tr></table></figure>
+<blockquote>
+<p>查看帮助</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm <span class="built_in">help</span> &lt;<span class="built_in">command</span>&gt;</div></pre></td></tr></table></figure>
+<h3 id="package-json属性"><a href="#package-json属性" class="headerlink" title="package.json属性"></a>package.json属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">- name 			--包名</div><div class="line">- version 		--包的版本号</div><div class="line">- description	--包的描述</div><div class="line">- homepage		--包的官网url</div><div class="line">- author 		--包的作者姓名</div><div class="line">- contributors  --包的其他贡献者姓名</div><div class="line">- dependencies  --依赖包列表</div><div class="line">- repository    --包代码存放的地方的类型</div><div class="line">- main 			--main字段是一个模块ID,它是一个指向你程序的主要项目</div><div class="line">- keywords 		--关键字</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="CNPM"><a href="#CNPM" class="headerlink" title="CNPM"></a>CNPM</h2><p>CNPM其实就是<code>淘宝NPM镜像</code>,这是一个完整npmjs.org镜像,可以用此代替官方版本(只读),同步频率目前为<code>10分钟</code>一次以保证尽量与官方服务同步.</p>
+<p>因为npm安装package是从国外服务器下载,速度会受较大影响.如果npm的服务器在国内就会大大的提高下载速度,于是淘宝团队就将整个服务端包都复制了一模一样的,10分钟更新一次,方便国内用户下载</p>
+<p><a href="https://npm.taobao.org/" target="_blank" rel="external">cnpm官网</a></p>
+<blockquote>
+<p>CNPM安装</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
+<blockquote>
+<p>安装了cnpm后,再安装package就可以用cnpm</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm install &lt;Module Name&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>同步模块</p>
+</blockquote>
+<p>可以通过sync命令马上同步一个模块,只有cnpm才有这个命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm sync connect</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>cnpm不能使用<code>cnpm publish</code></p>
+</blockquote>
+<hr>
+<h2 id="使用nrm快速切换npm源"><a href="#使用nrm快速切换npm源" class="headerlink" title="使用nrm快速切换npm源"></a>使用nrm快速切换npm源</h2><p>nrm是一个npm源管理器,能让我们在npm源间快速切换.<a href="https://github.com/Pana/nrm" target="_blank" rel="external">nrm的github</a></p>
+<blockquote>
+<p>install</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g nrm</div></pre></td></tr></table></figure>
+<h3 id="nrm使用"><a href="#nrm使用" class="headerlink" title="nrm使用"></a>nrm使用</h3><blockquote>
+<p>列出可用源</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ nrm ls</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"> npm ---- https://registry.npmjs.org/</div><div class="line">* cnpm --- http://r.cnpmjs.org/</div><div class="line">  taobao - http://registry.npm.taobao.org/</div><div class="line">  nj ----- https://registry.nodejitsu.com/</div><div class="line">  rednpm - http://registry.mirror.cqupt.edu.cn</div></pre></td></tr></table></figure>
+<blockquote>
+<p>切换现有源</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm use taobao</div></pre></td></tr></table></figure>
+<blockquote>
+<p>添加源</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ nrm add &lt;registry&gt; &lt;url&gt; [home]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>删除源</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm del &lt;registry&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>测试所有源速度</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm <span class="built_in">test</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">  npm ---- 891ms</div><div class="line">  cnpm --- 1213ms</div><div class="line">* taobao - 460ms</div><div class="line">  eu ----- 3859ms</div><div class="line">  au ----- 1073ms</div><div class="line">  sl ----- 4150ms</div><div class="line">  nj ----- 8008ms</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="yarn"><a href="#yarn" class="headerlink" title="yarn"></a>yarn</h2><p>终于写到yarn了,yarn是facebook在16年10月11日公开的js包管理工具,用来替代目前广泛使用的npm.<a href="https://github.com/yarnpkg/yarn" target="_blank" rel="external">yarn的github项目地址</a>.可以看到目前(17年01.04)已有2万多Star了.</p>
+<p>yarn和npm都作为nodejs的包管理工具.但相比npm.yarn具有的新亮点如下</p>
+<ul>
+<li>网络优化</li>
+<li>安全–下载前会检查签名和包的完整性</li>
+<li>离线模式–如果之前安装过一个包,再次安装就不用从网络下载了</li>
+<li>依赖关系确定性</li>
+<li>扁平模式</li>
+</ul>
+<blockquote>
+<p>总结来说,yarn具有快速,安全,可靠的特点</p>
+</blockquote>
+<h3 id="yarn的安装"><a href="#yarn的安装" class="headerlink" title="yarn的安装"></a>yarn的安装</h3><p>这里给出官方文档 <a href="https://yarnpkg.com/en/docs/install" target="_blank" rel="external">yarn的安装</a>,没有中文版,比较新.看不懂的话可以使用有道翻译下~~</p>
+<h3 id="yarn的使用"><a href="#yarn的使用" class="headerlink" title="yarn的使用"></a>yarn的使用</h3><blockquote>
+<p>项目初始化.切到项目下,会在根目录生成package.json</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yarn init</div></pre></td></tr></table></figure>
+<blockquote>
+<p>添加依赖.添加包,会自动安装最新版本</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yarn add &lt;package&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>更新依赖</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">yarn upgrade [package] — 更新某个包</div><div class="line">yarn upgrade [package]@[version] — 指定更新到某个版本</div><div class="line">yarn upgrade [package]@[tag] — 指定更新版本到某个标签</div></pre></td></tr></table></figure>
+<blockquote>
+<p>移除依赖</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yarn remove &lt;package&gt;</div></pre></td></tr></table></figure>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>yarn里有个很重要的文件<code>yarn.lock</code>,在项目根目录下,不要去动它,在其他电脑初始化时,需要把<code>package.json</code>和<code>yarn.lock</code>都复制过去</p>
+<hr>
+<p>写了好久,今天就大概总结这么多吧.网上搜了很多资料,如果有不准确的地方欢迎指正 :）</p>
+<blockquote class="blockquote-center"><h3>Accept what was and what is, and you’ll have more positive energy to pursue what will be.</h3> </blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/01/03/跨域/" itemprop="url">
                   跨域
                 </a>
@@ -619,149 +868,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/31/next主题多说评论框样式修改/" itemprop="url">
-                  next主题多说评论框样式修改
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-12-31T18:37:14+08:00" content="2016-12-31">
-              2016-12-31
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/12/31/next主题多说评论框样式修改/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/31/next主题多说评论框样式修改/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/12/31/next主题多说评论框样式修改/" class="leancloud_visitors" data-flag-title="next主题多说评论框样式修改">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">visitors </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="修改多说评论框样式"><a href="#修改多说评论框样式" class="headerlink" title="修改多说评论框样式"></a>修改多说评论框样式</h2><p>在next主题下启用了多说评论框功能后,小伙伴们可能会对评论框样式不太满意,如果你懂一点CSS就好办了,找到css文件自己改改就行,如果不懂也没关系,这里给大家分享一下网上很多的一种样式,现在我用的就是这个样式.</p>
-<hr>
-<h2 id="首先next主题多说样式文件在这个路径-your-blog-path-themes-next-source-css-common-components-third-party-duoshuo-styl"><a href="#首先next主题多说样式文件在这个路径-your-blog-path-themes-next-source-css-common-components-third-party-duoshuo-styl" class="headerlink" title="首先next主题多说样式文件在这个路径:your-blog-path/themes/next/source/css/_common/components/third-party/duoshuo.styl"></a>首先next主题多说样式文件在这个路径:<code>your-blog-path/themes/next/source/css/_common/components/third-party/duoshuo.styl</code></h2><p>在这个文件的底部添加如下代码,这里我自己改动了两个样式:</p>
-<ul>
-<li><p>去掉多说版权显示<br><code>#ds-thread #ds-reset .ds-powered-by{display:none;}</code></p>
-</li>
-<li><p>去掉分享到微博<br><code>#ds-thread #ds-reset .ds-sync {display:none;}</code></p>
-</li>
-</ul>
-<hr>
-<h2 id="多说的后台自定义样式"><a href="#多说的后台自定义样式" class="headerlink" title="多说的后台自定义样式"></a>多说的后台自定义样式</h2><p>关于评论的头像样式,鼠标放上去旋转360度这种效果,需要在多说的后台自定义,如图<img src="http://doyouz.com/images/duoshuo.png" alt="duoshuo"></p>
-<p>在其中添加如下代码</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img&#123;  </div><div class="line">width:54px;height:54px; </div><div class="line">border-radius: 27px;</div><div class="line">-webkit-border-radius: 27px;</div><div class="line">-moz-border-radius:27px;</div><div class="line">box-shadow: inset 0 -1px 0 #3333sf; </div><div class="line">-webkit-box-shadow: inset 0 -1px 0 #3333sf;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">#ds-reset .ds-avatar img&#123;</div><div class="line">width:54px;height:54px; </div><div class="line">border-radius: 27px;</div><div class="line">-webkit-border-radius: 27px;</div><div class="line">-moz-border-radius:27px;</div><div class="line">box-shadow: inset 0 -1px 0 #3333sf;</div><div class="line">-webkit-box-shadow: inset 0 -1px 0 #3333sf;</div><div class="line">-webkit-transition: 0.4s;   </div><div class="line">-webkit-transition: -webkit-transform 0.4s ease-out;</div><div class="line">transition: transform 0.4s ease-out;</div><div class="line">-moz-transition: -moz-transform 0.4s ease-out;</div><div class="line">&#125;</div><div class="line"></div><div class="line">#ds-reset .ds-avatar img:hover&#123;</div><div class="line">box-shadow: 0 0 10px #fff; rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);</div><div class="line">-webkit-box-shadow: 0 0 10px #fff; rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);</div><div class="line">transform: rotateZ(360deg);</div><div class="line">-webkit-transform: rotateZ(360deg);</div><div class="line">-moz-transform: rotateZ(360deg);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<hr>
-<p>即使你不懂css也没关系,直接复制粘贴就好.之后再<code>hexo s</code>本地预览一下看看效果吧.</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -807,7 +913,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -824,7 +930,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
