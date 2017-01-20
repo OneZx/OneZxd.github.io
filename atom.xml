@@ -106,7 +106,7 @@
     <link href="http://doyouz.com/2017/01/14/webpack/"/>
     <id>http://doyouz.com/2017/01/14/webpack/</id>
     <published>2017-01-14T15:19:31.000Z</published>
-    <updated>2017-01-18T15:50:38.212Z</updated>
+    <updated>2017-01-20T07:36:53.719Z</updated>
     
     <content type="html"><![CDATA[<h3 id="what-is-webpack"><a href="#what-is-webpack" class="headerlink" title="what is webpack ?"></a>what is webpack ?</h3><p>webpack是一个模块打包器,它将根据模块的依赖关系进行静态分析，然后将这些模块按照指定的规则生成对应的静态资源。</p>
 <ul>
@@ -169,7 +169,7 @@
 <h5 id="修改配置文件-2"><a href="#修改配置文件-2" class="headerlink" title="修改配置文件"></a>修改配置文件</h5><p>-url-loader传入的limit参数告诉加载器图片如果不大于25kb要自动在它的从属css文件中转成base64字符串</p>
 <h5 id="大图片的处理"><a href="#大图片的处理" class="headerlink" title="大图片的处理"></a>大图片的处理</h5><p>webpack会将小于指定大小的文件转换成base64格式的data<br>Url,大图片会做适当的压缩并存放在指定目录中</p>
 <hr>
-<p>没有整理好 待重新补充….</p>
+<p>没有整理好 待重新补充….<br>心伤.tell me why .how to do it</p>
 <blockquote class="blockquote-center"><h2>I’ll think of you every step of the way.</h2> </blockquote>
 ]]></content>
     
