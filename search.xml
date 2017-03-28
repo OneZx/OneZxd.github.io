@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[arguments]]></title>
+      <url>%2F2017%2F03%2F28%2Farguments%2F</url>
+      <content type="text"><![CDATA[arguments在函数被调用时,会自动在该函数内部生成一个名为 arguments的隐藏对象.该对象类似于数组,但除了长度之外没有任何数组属性.可以使用[]操作符获取函数调用时传递的实参. 1234(function () &#123; console.log(arguments instanceof Array); // false console.log(typeof(arguments)); // object &#125;)(); 转换为数组 123456789//ES6//方法1. 注意:对参数使用slice会阻止js引擎中的优化let args = Array.prototype.slice.call(arguments); let args = [].slice.call(arguments);//方法2.let args = Array.from(arguments);let args = [...arguments]; 属性 arguments.callee 指向当前执行的函数 arguments.length 实参长度(指向传递给当前函数的参数数量) arguments.callee.length 形参长度 arguments.callee 引用当前正在运行的函数,给匿名函数提供了一种自我引用的方法 arguments.callee :初始值就是正被执行的Function对象,常用于匿名函数 1234567891011121314function a(x, y, z) &#123; //arguments.callee指向函数a(),arguments.callee.length==a.length; console.log(arguments.callee.length); //3 console.log(arguments.length); //5 if (arguments.callee.length != arguments.length) &#123; //判断形参与实参个数是否相等，不相等则不执行 console.log(arguments.callee); return false; &#125; &#125; a(1,2,3,4,5); 123456789function create() &#123; return function(n) &#123; if (n &lt;= 1) return 1; return n * arguments.callee(n - 1); &#125;;&#125;var result = create()(5); // returns 120 (5 * 4 * 3 * 2 * 1) Function.caller 返回调用指定函数的函数(调用函数的父函数) 返回一个对函数的引用,该函数调用了当前函数 非标特性,尽量不在生产环境中用它 在一个函数调用另一个函数时,被调用函数会自动生成一个caller属性,指向调用它的函数对象,如果该函数当前未被调用,则Function.caller为null 1234567891011function parentCheck() &#123; check(""); function check() &#123; subCheck(); function subCheck() &#123; console.log(arguments.callee); // function subCheck()&#123;&#125; console.log(subCheck.caller.caller) //function parentCheck()&#123;&#125; &#125; &#125;&#125;parentCheck(); 如果一个函数f是在全局作用域内被调用的,则f.caller为null,相反,如果一个函数是在另外一个函数作用域内被调用的,则f.caller指向调用它的那个函数. 该属性的常用形式arguments.callee.caller替代了被废弃的 arguments.caller. 注意,callee和caller两个属性只有当函数在执行时才有用 function.caller中 function是正在被执行的函数]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[CommonJs-CMD-AMD]]></title>
       <url>%2F2017%2F01%2F19%2FCommonJs-CMD-AMD%2F</url>
       <content type="text"><![CDATA[区分三者关于Js中的模块化规范(CommonJS，AMD，CMD),很多人可能分不清三者之间到底是什么关系,下面我来梳理梳理,let’s get started. CommonJs由于Js语言本身设计时间仓促,缺少类等(ES5),没有模块化的思想,在一个js中不能引入另一个js文件.开发人员就为js的模块化制定了一套规范,取名CommonJs.而NodeJs是这种规范在后台的实现. 注意,CommonJs加载模块是同步的,只有加载完成一个模块后才能执行后面的操作.而Node.js主要用于服务器的编程,加载的模块文件一般存在本地,加载快,不用考虑异步加载的方式.所以CommonJs规范比较适用.but呢,如果实在浏览器环境,我们要从服务器中加载模块,这里就必须采用异步模式. 于是,在前端产生了AMD和CMD两种方案. AMD(Asynchromous Module Definition) AMD 是 RequireJS 在推广过程中对模块定义的规范化产出 AMD异步加载模块。它的模块支持对象 函数 构造器 字符串 JSON等各种类型的模块。 CMD（Common Module Definition）]]></content>

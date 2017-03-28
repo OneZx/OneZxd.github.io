@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -86,15 +86,19 @@
 
 
 
-<meta name="description" content="for you, a thousand times over.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="doyou z.">
-<meta property="og:url" content="http://doyouz.com/tags/zhihu/index.html">
+<meta name="description" content="arguments在函数被调用时,会自动在该函数内部生成一个名为 arguments的隐藏对象.该对象类似于数组,但除了长度之外没有任何数组属性.可以使用[]操作符获取函数调用时传递的实参.
+1234(function () &amp;#123;      console.log(arguments instanceof Array); // false      console.log(typeof(a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="arguments">
+<meta property="og:url" content="http://doyouz.com/2017/03/28/arguments/index.html">
 <meta property="og:site_name" content="doyou z.">
-<meta property="og:description" content="for you, a thousand times over.">
+<meta property="og:description" content="arguments在函数被调用时,会自动在该函数内部生成一个名为 arguments的隐藏对象.该对象类似于数组,但除了长度之外没有任何数组属性.可以使用[]操作符获取函数调用时传递的实参.
+1234(function () &amp;#123;      console.log(arguments instanceof Array); // false      console.log(typeof(a">
+<meta property="og:updated_time" content="2017-03-28T08:53:46.849Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="doyou z.">
-<meta name="twitter:description" content="for you, a thousand times over.">
+<meta name="twitter:title" content="arguments">
+<meta name="twitter:description" content="arguments在函数被调用时,会自动在该函数内部生成一个名为 arguments的隐藏对象.该对象类似于数组,但除了长度之外没有任何数组属性.可以使用[]操作符获取函数调用时传递的实参.
+1234(function () &amp;#123;      console.log(arguments instanceof Array); // false      console.log(typeof(a">
 
 
 
@@ -112,7 +116,7 @@
   };
 </script>
 
-  <title> Tag: zhihu | doyou z. </title>
+  <title> arguments | doyou z. </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -133,7 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -254,46 +258,198 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        zhihu
-        <small>Tag</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                arguments
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-03-28T16:52:10+08:00" content="2017-03-28">
+              2017-03-28
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/front-end/" itemprop="url" rel="index">
+                    <span itemprop="name">front-end</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/03/28/arguments/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/28/arguments/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/03/28/arguments/" class="leancloud_visitors" data-flag-title="arguments">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h3 id="arguments"><a href="#arguments" class="headerlink" title="arguments"></a>arguments</h3><p>在函数被调用时,会自动在该函数内部生成一个名为 arguments的隐藏<code>对象</code>.该对象类似于数组,但除了<code>长度</code>之外没有任何数组属性.可以使用[]操作符获取函数调用时传递的<code>实参</code>.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;  </div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span> <span class="keyword">instanceof</span> <span class="built_in">Array</span>); <span class="comment">// false  </span></div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span>(<span class="built_in">arguments</span>)); <span class="comment">// object  </span></div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
+<blockquote>
+<p>转换为数组</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//ES6</span></div><div class="line"><span class="comment">//方法1. 注意:对参数使用slice会阻止js引擎中的优化</span></div><div class="line"><span class="keyword">let</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>); </div><div class="line"></div><div class="line"><span class="keyword">let</span> args = [].slice.call(<span class="built_in">arguments</span>);</div><div class="line"></div><div class="line"><span class="comment">//方法2.</span></div><div class="line"><span class="keyword">let</span> args = <span class="built_in">Array</span>.from(<span class="built_in">arguments</span>);</div><div class="line"><span class="keyword">let</span> args = [...arguments];</div></pre></td></tr></table></figure>
+<blockquote>
+<p>属性</p>
+</blockquote>
+<ul>
+<li>arguments.callee 指向当前执行的函数</li>
+<li>arguments.length  实参长度(指向传递给当前函数的参数数量)</li>
+<li>arguments.callee.length 形参长度</li>
+</ul>
+<blockquote>
+<p>arguments.callee 引用当前正在运行的函数,给匿名函数提供了一种自我引用的方法</p>
+</blockquote>
+<ul>
+<li>arguments.callee :初始值就是<code>正被执行的Function对象</code>,常用于匿名函数</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params">x, y, z</span>) </span>&#123;</div><div class="line">        <span class="comment">//arguments.callee指向函数a(),arguments.callee.length==a.length;</span></div><div class="line"></div><div class="line">        <span class="built_in">console</span>.log(<span class="built_in">arguments</span>.callee.length); <span class="comment">//3</span></div><div class="line">       	<span class="built_in">console</span>.log(<span class="built_in">arguments</span>.length);  <span class="comment">//5</span></div><div class="line"></div><div class="line">        <span class="keyword">if</span> (<span class="built_in">arguments</span>.callee.length != <span class="built_in">arguments</span>.length) &#123;</div><div class="line"></div><div class="line">            <span class="comment">//判断形参与实参个数是否相等，不相等则不执行</span></div><div class="line">            <span class="built_in">console</span>.log(<span class="built_in">arguments</span>.callee);</div><div class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">        &#125;       </div><div class="line">    &#125;</div><div class="line">    a(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">create</span>(<span class="params"></span>) </span>&#123;</div><div class="line">   <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</div><div class="line">      <span class="keyword">if</span> (n &lt;= <span class="number">1</span>)</div><div class="line">         <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">      <span class="keyword">return</span> n * <span class="built_in">arguments</span>.callee(n - <span class="number">1</span>);</div><div class="line">   &#125;;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> result = create()(<span class="number">5</span>); <span class="comment">// returns 120 (5 * 4 * 3 * 2 * 1)</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>Function.caller 返回调用指定函数的函数(调用函数的父函数) </p>
+</blockquote>
+<ul>
+<li>返回一个对函数的引用,该函数调用了当前函数</li>
+<li>非标特性,尽量不在生产环境中用它</li>
+<li>在一个函数调用另一个函数时,被调用函数会自动生成一个caller属性,指向调用它的函数对象,如果该函数当前未被调用,则Function.caller为null</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">parentCheck</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    check(<span class="string">""</span>);</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">check</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        subCheck();</div><div class="line">        <span class="function"><span class="keyword">function</span> <span class="title">subCheck</span>(<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="built_in">console</span>.log(<span class="built_in">arguments</span>.callee);  <span class="comment">// function subCheck()&#123;&#125;</span></div><div class="line">            <span class="built_in">console</span>.log(subCheck.caller.caller)  <span class="comment">//function parentCheck()&#123;&#125;</span></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">parentCheck();</div></pre></td></tr></table></figure>
+<ul>
+<li><p>如果一个函数f是在全局作用域内被调用的,则f.caller为null,相反,如果一个函数是在另外一个函数作用域内被调用的,则f.caller指向调用它的那个函数.</p>
+</li>
+<li><p>该属性的常用形式arguments.callee.caller替代了被废弃的 arguments.caller.</p>
+</li>
+</ul>
+<blockquote>
+<p>注意,callee和caller两个属性只有当函数在执行时才有用</p>
+</blockquote>
+<ul>
+<li>function.caller中 function是正在被执行的函数</li>
+</ul>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2017/01/15/about尤大大在知乎的回答/" itemprop="url">
-              
-                <span itemprop="name">about尤大大在知乎的回答</span>
-              
-            </a>
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-01-15T21:09:10+08:00"
-              content="2017-01-15" >
-          01-15
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/19/CommonJs-CMD-AMD/" rel="next" title="CommonJs-CMD-AMD">
+                <i class="fa fa-chevron-left"></i> CommonJs-CMD-AMD
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -301,6 +457,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/28/arguments/"
+           data-title="arguments" data-url="http://doyouz.com/2017/03/28/arguments/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -320,8 +484,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -402,6 +575,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#arguments"><span class="nav-number">1.</span> <span class="nav-text">arguments</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -505,6 +689,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
